@@ -2,31 +2,57 @@
  {
   "id": "2026-24155",
   "source": "US-FR",
-  "status": "게재예정",
+  "status": "게재",
   "agency": "ITC",
-  "title": "Antidumping or Countervailing Duty Investigations, Orders, or Reviews: Polytetramethylene Ether Glycol (PTMEG) from China, South Korea, Taiwan, and Vietnam; Correction ",
-  "product": "Antidumping or Countervailing Duty Investigations, Orders, or Reviews: Polytetramethylene Ether Glycol (PTMEG)",
+  "title": "Polytetramethylene Ether Glycol (PTMEG) From China, South Korea, Taiwan, and Vietnam; Scheduling of the Final Phase of Antidumping Duty Investigations; Correction",
+  "product": "Polytetramethylene Ether Glycol (PTMEG)",
   "countries": [
    "China",
    "South Korea",
    "Taiwan",
    "Vietnam"
   ],
-  "stage": "기타",
+  "stage": "일정·청문회",
   "priority": 3,
-  "remedy": "AD/CVD",
-  "case_numbers": [],
+  "remedy": "AD",
+  "case_numbers": [
+   "731-TA-1782"
+  ],
   "watch": [
    "Korea"
   ],
-  "snippets": [],
-  "abstract": "",
+  "snippets": [
+   "Polytetramethylene Ether Glycol (PTMEG) From China, South Korea, Taiwan, and Vietnam; Scheduling of the Final Phase of Antidumping Duty Investigations; Correction"
+  ],
+  "abstract": "Corrections are made to the date the prehearing report will be placed on the nonpublic record; the deadline to request to appear at the hearing; the date of the prehearing conference; and the deadline for filing prehearing briefs.",
   "publication_date": "2026-11-27",
-  "html_url": "https://www.federalregister.gov/public-inspection/2026-24155/antidumping-or-countervailing-duty-investigations-orders-or-reviews-polytetramethylene-ether-glycol",
-  "pdf_url": "https://public-inspection.federalregister.gov/2026-24155.pdf",
-  "raw_text_url": "https://www.federalregister.gov/public-inspection/raw_text/202/624/155.txt",
+  "html_url": "https://www.federalregister.gov/documents/2026/11/27/2026-24155/polytetramethylene-ether-glycol-ptmeg-from-china-south-korea-taiwan-and-vietnam-scheduling-of-the",
+  "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-27/pdf/2026-24155.pdf",
+  "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/11/27/2026-24155.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
+ },
+ {
+  "id": "2026-24035",
+  "source": "US-FR",
+  "status": "게재",
+  "agency": "상무부(ITA)",
+  "title": "United States-Mexico-Canada Agreement (USMCA), Article 10.12: Binational Panel Review: Notice of Request for Panel Review",
+  "product": "",
+  "countries": [],
+  "stage": "기타",
+  "priority": 3,
+  "remedy": "AD",
+  "case_numbers": [],
+  "watch": [],
+  "snippets": [],
+  "abstract": "A Request for Panel Review was filed in the matter of Liquid Caustic Soda from the United States: Final Resolution regarding the Antidumping Duty Administrative Review with the Mexican Section of the USMCA Secretariat on June 27, 2025. The subject merchandise is classified under Mexico's Tarriff code: 2815.12.01. The Request for Panel Review was filed on behalf of Innophos Fosfatados de M[eacute]xico, S. de R.L. de C.V. The USMCA Secretariat has assigned case number MEX-USA-2025-10.12-01 to this request.",
+  "publication_date": "2026-11-27",
+  "html_url": "https://www.federalregister.gov/documents/2026/11/27/2026-24035/united-states-mexico-canada-agreement-usmca-article-1012-binational-panel-review-notice-of-request",
+  "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-27/pdf/2026-24035.pdf",
+  "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/11/27/2026-24035.txt",
+  "first_seen": "2026-11-26T07:24Z",
+  "fulltext_checked": true
  },
  {
   "id": "2026-24012",
@@ -2264,7 +2290,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-06/pdf/2026-22658.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/11/06/2026-22658.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-22631",
@@ -2290,7 +2316,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-05/pdf/2026-22631.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/11/05/2026-22631.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-22630",
@@ -2312,14 +2338,29 @@
    "Korea",
    "사건번호 580"
   ],
-  "snippets": [],
+  "snippets": [
+   "[A-580-809]",
+   "Circular Welded Non-Alloy Steel Pipe From the Republic of Korea: Final Results of Antidumping Duty Administrative Review; 2023-2024",
+   "of Korea: Preliminary Results and Rescission, in Part, of Antidumping Duty Administrative Review; 2023-2024, 91 FR 27029 (May 13, 2026) (Preliminary Results), and accompanying Preliminary",
+   "Steel Pipe from the Republic of Korea,'' dated August 25, 2026. \\3\\ See Hyundai Steel/HSP's Letter, ``HSP/Hyundai Steel's Case Brief,'' dated August 26, 2026.",
+   "Circular Welded Non-Alloy Steel Pipe from the Republic of Korea,'' dated October 15, 2026. ---------------------------------------------------------------------------",
+   "Circular Welded Non-Alloy Steel Pipe from the Republic of Korea; 2023-2024,'' dated concurrently with, and hereby adopted by, this notice (Issues and Decision Memorandum).",
+   "Steel Pipe from Brazil, the Republic of Korea (Korea), Mexico, and Venezuela, and Amendment to Final Determination of Sales at Less Than Fair Value: Certain Circular Welded Non-Alloy Steel Pipe from",
+   "Korea, 57 FR 49453 (November 2, 1992). (Order). ---------------------------------------------------------------------------",
+   "steel pipe from the Republic of Korea. For a complete description of the scope of the Order, see the Issues and Decision Memorandum.",
+   "the Republic of Korea,'' dated July 31, 2026; and ``Verification of the Constructed Export Price Questionnaire Responses of Husteel Co. Ltd. in the 2023-2024 antidumping duty (AD) administrative review of",
+   "Circular Welded Non-Alloy Steel Pipe from the Republic of Korea,'' dated July 31, 2026. \\9\\ See Memoranda, ``Verification of the Responses of Hyundai",
+   "Pipe from the Republic of Korea,'' dated August 18, 2026; and ``Verification of the Constructed Export Price Questionnaire Responses of Hyundai Steel USA, Inc. and Hyundai Corporation USA in",
+   "Circular Welded Non-Alloy Steel Pipe from the Republic of Korea,'' dated August 17, 2026. ---------------------------------------------------------------------------",
+   "Republic of Korea; Certain Oil Country Tubular Goods from the Republic of Korea; Welded Line Pipe from the Republic of Korea; and Large Diameter Welded Pipe from the Republic of Korea: Notice of"
+  ],
   "abstract": "The U.S. Department of Commerce (Commerce) determines that Hyundai Steel Company (Hyundai Steel) and Hyundai Steel Pipe Co., Ltd. (HSP) made sales of subject merchandise at less than normal value (NV) during the period of review (POR), November 1, 2023, through October 31, 2024. Commerce determines that Husteel Co., Ltd. (Husteel) did not make sales of subject merchandise at less than NV during the POR.",
   "publication_date": "2026-11-05",
   "html_url": "https://www.federalregister.gov/documents/2026/11/05/2026-22630/circular-welded-non-alloy-steel-pipe-from-the-republic-of-korea-final-results-of-antidumping-duty",
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-05/pdf/2026-22630.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/11/05/2026-22630.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-22629",
@@ -2332,16 +2373,55 @@
   "stage": "연례재심 개시",
   "priority": 2,
   "remedy": "AD/CVD",
-  "case_numbers": [],
-  "watch": [],
-  "snippets": [],
+  "case_numbers": [
+   "A-201-847",
+   "A-201-859",
+   "A-469-822",
+   "A-489-824",
+   "A-508-814",
+   "A-523-814",
+   "A-533-843",
+   "A-533-919",
+   "A-552-801",
+   "A-552-817",
+   "A-570-082",
+   "A-570-088",
+   "A-570-954",
+   "A-580-870",
+   "A-580-880",
+   "A-580-881",
+   "A-583-863",
+   "C-508-815",
+   "C-533-844",
+   "C-570-083",
+   "C-570-089",
+   "C-570-953",
+   "C-580-882"
+  ],
+  "watch": [
+   "Korea",
+   "사건번호 580"
+  ],
+  "snippets": [
+   "REPUBLIC OF KOREA: Certain Oil Country Tubular 9/1/25-8/31/26 Goods, A-580-870.............................. AJU Besteel Co., Ltd.",
+   "REPUBLIC OF KOREA: Certain Cold-Rolled Steel 9/1/25-8/31/26 Flat Products, A-580-881...................... AJU Steel Co., Ltd.",
+   "Ameri-Source Korea Dai Yang Metal Co., Ltd. DCM Corporation",
+   "Okaya Korea Co., Ltd. POSCO; POSCO International Corporation POSCO Coated and Colored Steel Co., Ltd.",
+   "Signode Korea Inc. SK Networks Co., Ltd. Soon Hong Trading Co., Ltd.",
+   "Wolverine Korea Co., Ltd. REPUBLIC OF KOREA: Heavy Walled Rectangular 9/1/25-8/31/26 Welded Carbon Steel Pipes and Tubes, A-580-880",
+   "REPUBLIC OF KOREA: Certain Cold-Rolled Steel 1/1/25-12/31/25 Flat Products, C-580-882...................... AJU Steel Co., Ltd.",
+   "Amerisource Korea BC Trade Busung Steel Co., Ltd.",
+   "Okaya (Korea) Co., Ltd. PL Special Steel Co., Ltd. POSCO",
+   "Signode Korea Inc. SK Networks Co., Ltd. SM Automotive Ltd.",
+   "Wolverine Korea Co., Ltd Xeno Energy Young Steel Co., Ltd."
+  ],
   "abstract": "The U.S. Department of Commerce (Commerce) has received requests to conduct administrative reviews of various antidumping duty (AD) and countervailing duty (CVD) orders with September anniversary dates. In accordance with Commerce's regulations, we are initiating those administrative reviews.",
   "publication_date": "2026-11-05",
   "html_url": "https://www.federalregister.gov/documents/2026/11/05/2026-22629/initiation-of-antidumping-and-countervailing-duty-administrative-reviews",
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-05/pdf/2026-22629.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/11/05/2026-22629.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-22628",
@@ -2367,7 +2447,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-05/pdf/2026-22628.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/11/05/2026-22628.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-22627",
@@ -2393,7 +2473,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-05/pdf/2026-22627.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/11/05/2026-22627.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-22626",
@@ -2415,14 +2495,24 @@
    "Korea",
    "사건번호 580"
   ],
-  "snippets": [],
+  "snippets": [
+   "[C-580-837]",
+   "Republic of Korea: Final Results of Countervailing Duty Administrative Review; 2024",
+   "steel plate (CTL plate) from the Republic of Korea (Korea) received countervailable subsidies during the period of review (POR) January 1, 2024, through December 31, 2024.",
+   "the Republic of Korea: Preliminary Results and Partial Rescission of Countervailing Duty Administrative Review; 2024, 91 FR 27012 (May 13, 2026) (Preliminary Results), and accompanying Preliminary",
+   "the Republic of Korea; 2024,'' dated concurrently with, and hereby adopted by, this notice (Issues and Decision Memorandum). ---------------------------------------------------------------------------",
+   "The product covered by this Order is CTL plate from Korea.\\4\\ For a complete description of the scope of this Order, see the Issues and Decision Memorandum.",
+   "Korea; and Notice of Countervailing Duty Orders: Certain Cut-to- Length Carbon-Quality Steel Plate from France, India, Indonesia, Italy, and the Republic of Korea, 65 FR 6587 (February 10, 2000)",
+   "Comment 4: Whether the Provision of Korean Allocation Units (KAUs) Constitutes a Financial Contribution Comment 5: Whether the Provision of KAUs Confers a",
+   "Comment 6: Whether the Korea Emissions Trading System (K-ETS) Program Is Specific Comment 7: Whether Commerce Should Apply Adverse Facts Available"
+  ],
   "abstract": "The U.S. Department of Commerce (Commerce) determines that certain producers and exporters of certain cut-to-length carbon-quality steel plate (CTL plate) from the Republic of Korea (Korea) received countervailable subsidies during the period of review (POR) January 1, 2024, through December 31, 2024.",
   "publication_date": "2026-11-05",
   "html_url": "https://www.federalregister.gov/documents/2026/11/05/2026-22626/certain-cut-to-length-carbon-quality-steel-plate-from-the-republic-of-korea-final-results-of",
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-05/pdf/2026-22626.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/11/05/2026-22626.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-22625",
@@ -2448,7 +2538,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-05/pdf/2026-22625.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/11/05/2026-22625.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-22624",
@@ -2474,7 +2564,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-05/pdf/2026-22624.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/11/05/2026-22624.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-22623",
@@ -2500,7 +2590,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-05/pdf/2026-22623.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/11/05/2026-22623.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-22597",
@@ -2527,7 +2617,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-05/pdf/2026-22597.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/11/05/2026-22597.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-22595",
@@ -2553,7 +2643,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-05/pdf/2026-22595.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/11/05/2026-22595.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-22534",
@@ -2579,7 +2669,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-04/pdf/2026-22534.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/11/04/2026-22534.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-22532",
@@ -2605,7 +2695,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-04/pdf/2026-22532.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/11/04/2026-22532.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-22531",
@@ -2631,7 +2721,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-04/pdf/2026-22531.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/11/04/2026-22531.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-22530",
@@ -2661,7 +2751,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-04/pdf/2026-22530.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/11/04/2026-22530.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-22529",
@@ -2687,7 +2777,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-04/pdf/2026-22529.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/11/04/2026-22529.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-22528",
@@ -2705,15 +2795,19 @@
   "case_numbers": [
    "A-570-914"
   ],
-  "watch": [],
-  "snippets": [],
+  "watch": [
+   "Korea"
+  ],
+  "snippets": [
+   "Mexico, the People's Republic of China, and the Republic of Korea: Antidumping Duty Orders; Light-Walled Rectangular Pipe and Tube from the Republic of Korea: Notice of Amended Final Determination of"
+  ],
   "abstract": "The U.S. Department of Commerce (Commerce) preliminarily determines that Hangzhou Ailong Metal Products Co., Ltd. (Ailong) failed to establish its eligibility for a separate rate and, therefore, is part of the China-wide entity. The period of review (POR) is August 1, 2024, through July 31, 2025. In addition, we are rescinding the review with respect to 39 companies. Interested parties are invited to comment on these preliminary results of review.",
   "publication_date": "2026-11-04",
   "html_url": "https://www.federalregister.gov/documents/2026/11/04/2026-22528/light-walled-rectangular-pipe-and-tube-from-the-peoples-republic-of-china-preliminary-results-and",
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-04/pdf/2026-22528.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/11/04/2026-22528.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-22527",
@@ -2739,7 +2833,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-04/pdf/2026-22527.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/11/04/2026-22527.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-22526",
@@ -2765,7 +2859,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-04/pdf/2026-22526.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/11/04/2026-22526.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-22525",
@@ -2791,7 +2885,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-04/pdf/2026-22525.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/11/04/2026-22525.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-22524",
@@ -2817,7 +2911,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-04/pdf/2026-22524.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/11/04/2026-22524.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-22523",
@@ -2845,7 +2939,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-04/pdf/2026-22523.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/11/04/2026-22523.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-22522",
@@ -2871,7 +2965,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-04/pdf/2026-22522.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/11/04/2026-22522.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-22435",
@@ -2897,7 +2991,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-03/pdf/2026-22435.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/11/03/2026-22435.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-22431",
@@ -2923,7 +3017,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-03/pdf/2026-22431.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/11/03/2026-22431.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-22353",
@@ -2949,7 +3043,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-02/pdf/2026-22353.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/11/02/2026-22353.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-22351",
@@ -2975,7 +3069,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-02/pdf/2026-22351.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/11/02/2026-22351.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-22349",
@@ -3004,7 +3098,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-02/pdf/2026-22349.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/11/02/2026-22349.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-22348",
@@ -3031,7 +3125,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-02/pdf/2026-22348.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/11/02/2026-22348.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-22347",
@@ -3057,7 +3151,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-02/pdf/2026-22347.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/11/02/2026-22347.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-22345",
@@ -3070,16 +3164,63 @@
   "stage": "관세부과 명령",
   "priority": 2,
   "remedy": "AD/CVD",
-  "case_numbers": [],
-  "watch": [],
-  "snippets": [],
+  "case_numbers": [
+   "A-000-000",
+   "A-201-838",
+   "A-201-844",
+   "A-201-856",
+   "A-201-857",
+   "A-351-856",
+   "A-357-824",
+   "A-427-830",
+   "A-428-850",
+   "A-433-813",
+   "A-469-824",
+   "A-475-839",
+   "A-489-844",
+   "A-520-803",
+   "A-523-815",
+   "A-533-867",
+   "A-533-910",
+   "A-549-817",
+   "A-560-826",
+   "A-570-067",
+   "A-570-071",
+   "A-570-147",
+   "A-570-156",
+   "A-570-826",
+   "A-570-831",
+   "A-570-864",
+   "A-570-882",
+   "A-570-900",
+   "A-570-920",
+   "A-570-924",
+   "A-570-956",
+   "A-570-958",
+   "A-570-964",
+   "A-570-992",
+   "A-580-809",
+   "A-580-911",
+   "A-588-880",
+   "A-588-881",
+   "A-821-828",
+   "A-821-833"
+  ],
+  "watch": [
+   "Korea",
+   "사건번호 580"
+  ],
+  "snippets": [
+   "Republic of Korea: Circular Welded Non-Alloy Steel Pipe, A-580-809.. 11/1/25-10/31/26 Thermal Paper, A-580-911......................... 11/1/25-10/31/26",
+   "Republic of Korea: Oil Country Tubular Goods, C-580- 1/1/25-12/31/25 913................................................. Republic of T[uuml]rkiye:"
+  ],
   "abstract": "",
   "publication_date": "2026-11-02",
   "html_url": "https://www.federalregister.gov/documents/2026/11/02/2026-22345/antidumping-or-countervailing-duty-order-finding-or-suspended-investigation-opportunity-to-request",
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-02/pdf/2026-22345.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/11/02/2026-22345.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-22343",
@@ -3101,14 +3242,21 @@
    "Korea",
    "사건번호 580"
   ],
-  "snippets": [],
+  "snippets": [
+   "[A-580-867]",
+   "Large Power Transformers From the Republic of Korea: Preliminary Results of Antidumping Duty Administrative Review; 2024-2025",
+   "the Republic of Korea (Korea).\\1\\ On January 29, 2026, Commerce selected Hyundai and Iljin as the mandatory respondents in this review.\\2\\",
+   "Republic of Korea: Antidumping Duty Order, 77 FR 53177 (August 31, 2012) (Order). \\2\\ See Memorandum, ``Respondent Selection,'' dated January 29,",
+   "Transformers from the Republic of Korea; 2024-2025,'' dated concurrently with, and hereby adopted by, this notice (Preliminary Decision Memorandum).",
+   "from Korea. For a complete description of the scope of the Order, see the Preliminary Decision Memorandum."
+  ],
   "abstract": "The U.S. Department of Commerce (Commerce) preliminarily determines that HD Hyundai Electric Co., Ltd. (Hyundai) and Iljin Electric Co., Ltd (Iljin) did not make sales of subject merchandise at less than normal value (NV) during the period of review (POR), August 1, 2024, through July 31, 2025. Interested parties are invited to comment on these preliminary results of review.",
   "publication_date": "2026-11-02",
   "html_url": "https://www.federalregister.gov/documents/2026/11/02/2026-22343/large-power-transformers-from-the-republic-of-korea-preliminary-results-of-antidumping-duty",
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-02/pdf/2026-22343.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/11/02/2026-22343.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-22313",
@@ -3130,7 +3278,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-02/pdf/2026-22313.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/11/02/2026-22313.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-22312",
@@ -3152,7 +3300,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-02/pdf/2026-22312.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/11/02/2026-22312.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-22311",
@@ -3181,7 +3329,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-02/pdf/2026-22311.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/11/02/2026-22311.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-22308",
@@ -3211,7 +3359,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-02/pdf/2026-22308.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/11/02/2026-22308.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-22282",
@@ -3238,7 +3386,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-02/pdf/2026-22282.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/11/02/2026-22282.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-22281",
@@ -3265,7 +3413,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-11-02/pdf/2026-22281.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/11/02/2026-22281.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-22245",
@@ -3291,7 +3439,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-30/pdf/2026-22245.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/10/30/2026-22245.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-22233",
@@ -3317,7 +3465,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-30/pdf/2026-22233.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/10/30/2026-22233.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-22167",
@@ -3343,7 +3491,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-30/pdf/2026-22167.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/10/30/2026-22167.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-22126",
@@ -3369,7 +3517,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-30/pdf/2026-22126.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/10/30/2026-22126.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-22077",
@@ -3397,7 +3545,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-29/pdf/2026-22077.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/10/29/2026-22077.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-22032",
@@ -3423,7 +3571,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-29/pdf/2026-22032.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/10/29/2026-22032.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-22024",
@@ -3450,7 +3598,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-29/pdf/2026-22024.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/10/29/2026-22024.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-21977",
@@ -3472,7 +3620,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-28/pdf/2026-21977.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/10/28/2026-21977.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-21930",
@@ -3498,7 +3646,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-28/pdf/2026-21930.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/10/28/2026-21930.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-21929",
@@ -3525,7 +3673,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-28/pdf/2026-21929.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/10/28/2026-21929.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-21819",
@@ -3552,7 +3700,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-26/pdf/2026-21819.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/10/26/2026-21819.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-21793",
@@ -3578,7 +3726,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-26/pdf/2026-21793.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/10/26/2026-21793.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-21792",
@@ -3605,7 +3753,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-26/pdf/2026-21792.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/10/26/2026-21792.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-21791",
@@ -3631,7 +3779,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-26/pdf/2026-21791.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/10/26/2026-21791.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-21790",
@@ -3649,15 +3797,19 @@
   "case_numbers": [
    "A-201-847"
   ],
-  "watch": [],
-  "snippets": [],
+  "watch": [
+   "Korea"
+  ],
+  "snippets": [
+   "Tubes from the Republic of Korea, Mexico, and the Republic of Turkey: Antidumping Duty Orders, 81 FR 62865 (September 13, 2016) (Order)."
+  ],
   "abstract": "The U.S. Department of Commerce (Commerce) is simultaneously initiating and issuing the preliminary results of a changed circumstances review (CCR) of the antidumping duty (AD) order on heavy- walled rectangular welded carbon steel pipes and tubes (HWR) from Mexico, consistent with section 751(b) of the Tariff Act of 1930, as amended (the Act), and 19 CFR 351.216 and 351.221(c)(3)(ii). Based on the information on the record, we preliminarily determine that Perfiles LM, S.A. de C.V. (PLM) is the successor-in-interest to Perfiles y Herrajes LM, S.A. de C.V. (PyH). Interested parties are invited to comment on these preliminary results.",
   "publication_date": "2026-10-26",
   "html_url": "https://www.federalregister.gov/documents/2026/10/26/2026-21790/heavy-walled-rectangular-welded-carbon-steel-pipes-and-tubes-from-mexico-initiation-and-expedited",
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-26/pdf/2026-21790.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/10/26/2026-21790.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-21783",
@@ -3687,7 +3839,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-26/pdf/2026-21783.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/10/26/2026-21783.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-21780",
@@ -3714,7 +3866,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-26/pdf/2026-21780.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/10/26/2026-21780.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-21779",
@@ -3740,7 +3892,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-26/pdf/2026-21779.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/10/26/2026-21779.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-21778",
@@ -3766,7 +3918,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-26/pdf/2026-21778.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/10/26/2026-21778.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-21767",
@@ -3792,7 +3944,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-26/pdf/2026-21767.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/10/26/2026-21767.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-21766",
@@ -3818,7 +3970,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-26/pdf/2026-21766.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/10/26/2026-21766.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-21754",
@@ -3846,7 +3998,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-26/pdf/2026-21754.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/10/26/2026-21754.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-21753",
@@ -3873,7 +4025,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-26/pdf/2026-21753.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/10/26/2026-21753.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-21624",
@@ -3899,7 +4051,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-22/pdf/2026-21624.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/10/22/2026-21624.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-21530",
@@ -3931,14 +4083,23 @@
    "Korea",
    "사건번호 580"
   ],
-  "snippets": [],
+  "snippets": [
+   "[A-489-816, A-533-857, A-552-817, A-580-870, A-823-815, C-489-817, C- 533-858]",
+   "Korea, the Republic of T[uuml]rkiye, the Socialist Republic of Vietnam, and Ukraine: Continuation of Antidumping Duty Orders and Countervailing Duty Orders",
+   "India, the Republic of Korea (Korea), the Republic of T[uuml]rkiye (T[uuml]rkiye), the Socialist Republic of Vietnam (Vietnam), and Ukraine would likely lead to the continuation or recurrence of dumping",
+   "the AD orders on OCTG from India, Korea, T[uuml]rkiye, and Vietnam.\\1\\ On September 10, 2014, Commerce published in the Federal Register the CVD orders on OCTG from India and T[uuml]rkiye.\\2\\ On July 16, 2019,",
+   "Republic of Korea, Taiwan, the Republic of Turkey, and the Socialist Republic of Vietnam: Antidumping Duty Orders; and Certain Oil Country Tubular Goods from the Socialist Republic of Vietnam:",
+   "\\4\\ See Oil Country Tubular Goods from India, South Korea, Turkey, Ukraine, and Vietnam; Institution of Five-Year Reviews, 90 FR 28768 (July 1, 2025).",
+   "Republic of Korea, the Republic of T[uuml]rkiye, the Socialist Republic of Vietnam, and Ukraine: Final Results of the Expedited Second Sunset Reviews of the Antidumping Duty Orders, 91 FR 967",
+   "\\8\\ See Oil Country Tubular Goods from India, South Korea, Turkey, Ukraine, and Vietnam; Determinations, 91 FR 61439 (September 29, 2026) (ITC Final Determination)."
+  ],
   "abstract": "As a result of the determinations by the U.S. Department of Commerce (Commerce) and the U.S. International Trade Commission (ITC) that revocation of the antidumping duty (AD) orders and countervailing duty (CVD) orders on certain oil country tubular goods (OCTG) from India, the Republic of Korea (Korea), the Republic of T[uuml]rkiye (T[uuml]rkiye), the Socialist Republic of Vietnam (Vietnam), and Ukraine would likely lead to the continuation or recurrence of dumping and countervailable subsidies and material injury to an industry in the United States, Commerce is publishing a notice of continuation of these AD and CVD orders.",
   "publication_date": "2026-10-22",
   "html_url": "https://www.federalregister.gov/documents/2026/10/22/2026-21530/certain-oil-country-tubular-goods-from-india-the-republic-of-korea-the-republic-of-trkiye-the",
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-22/pdf/2026-21530.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/10/22/2026-21530.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "C1-2026-14614",
@@ -3964,7 +4125,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-21/pdf/C1-2026-14614.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/10/21/C1-2026-14614.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-21458",
@@ -3992,7 +4153,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-20/pdf/2026-21458.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/10/20/2026-21458.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-21457",
@@ -4024,7 +4185,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-20/pdf/2026-21457.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/10/20/2026-21457.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-21452",
@@ -4054,7 +4215,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-20/pdf/2026-21452.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/10/20/2026-21452.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-21362",
@@ -4072,15 +4233,19 @@
   "case_numbers": [
    "A-583-854"
   ],
-  "watch": [],
-  "snippets": [],
+  "watch": [
+   "Korea"
+  ],
+  "snippets": [
+   "\\2\\ See Certain Steel Nails from the Republic of Korea, Malaysia, the Sultanate of Oman, Taiwan, and the Socialist Republic of Vietnam: Antidumping Duty Orders, 80 FR 39994 (July 13, 2015)"
+  ],
   "abstract": "The U.S. Department of Commerce (Commerce) determines that certain steel nails (nails) from Taiwan were sold in the United States at less than normal value during the period of review (POR), July 1, 2024, through June 30, 2025.",
   "publication_date": "2026-10-19",
   "html_url": "https://www.federalregister.gov/documents/2026/10/19/2026-21362/certain-steel-nails-from-taiwan-final-results-of-antidumping-duty-administrative-review-2024-2025",
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-19/pdf/2026-21362.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/10/19/2026-21362.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-21361",
@@ -4102,14 +4267,21 @@
    "Korea",
    "사건번호 580"
   ],
-  "snippets": [],
+  "snippets": [
+   "[A-580-911]",
+   "Thermal Paper From the Republic of Korea: Preliminary Results and Rescission, in Part, of Antidumping Duty Administrative Review; 2024- 2025",
+   "of Korea (Korea).\\1\\ On February 23, 2026, Commerce selected Hansol as the mandatory respondent in this review.\\2\\ On April 27, 2026, Domtar Corporation and Appvion, LLC (collectively, the petitioners) timely",
+   "Thermal Paper from Germany, Japan, the Republic of Korea, and Spain: Antidumping Duty Orders, 86 FR 66284 (November 22, 2021) (Order). \\2\\ See Memorandum, ``Respondent Selection,'' dated February 23,",
+   "on Thermal Paper from the Republic of Korea; 2024-2025,'' dated concurrently with, and hereby adopted by, this notice (Preliminary Decision Memorandum).",
+   "The merchandise subject to the Order is thermal paper from Korea. For a complete description of the scope of the Order, see the Preliminary Decision Memorandum."
+  ],
   "abstract": "The U.S. Department of Commerce (Commerce) preliminarily determines that Hansol Paper Company (Hansol) made sales of subject merchandise at less than normal value (NV) during the period of review (POR), November 1, 2024, through October 31, 2025. In addition, we are rescinding the review with respect to 16 companies. Interested parties are invited to comment on these preliminary results of review.",
   "publication_date": "2026-10-19",
   "html_url": "https://www.federalregister.gov/documents/2026/10/19/2026-21361/thermal-paper-from-the-republic-of-korea-preliminary-results-and-rescission-in-part-of-antidumping",
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-19/pdf/2026-21361.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/10/19/2026-21361.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-21296",
@@ -4135,7 +4307,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-19/pdf/2026-21296.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/10/19/2026-21296.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-21295",
@@ -4161,7 +4333,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-19/pdf/2026-21295.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/10/19/2026-21295.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-21294",
@@ -4187,7 +4359,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-19/pdf/2026-21294.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/10/19/2026-21294.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-21293",
@@ -4213,7 +4385,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-19/pdf/2026-21293.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/10/19/2026-21293.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-21292",
@@ -4239,7 +4411,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-19/pdf/2026-21292.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/10/19/2026-21292.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-21291",
@@ -4265,7 +4437,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-19/pdf/2026-21291.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/10/19/2026-21291.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-21286",
@@ -4291,7 +4463,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-19/pdf/2026-21286.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/10/19/2026-21286.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-21285",
@@ -4318,7 +4490,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-19/pdf/2026-21285.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/10/19/2026-21285.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-21281",

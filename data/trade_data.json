@@ -1,0 +1,231 @@
+{
+ "updated": "2026-11-26T07:30Z",
+ "customs_enabled": false,
+ "items": [
+  {
+   "hs": "390410",
+   "name": "PVC 수지",
+   "customs": {},
+   "comtrade": {
+    "IN": {
+     "year": 2025,
+     "total_usd": 2229628592.423,
+     "korea_usd": 185072150.695,
+     "korea_share": 0.08300582048684481,
+     "top": [
+      {
+       "partner": "China",
+       "usd": 1027020841.198,
+       "share": 0.46062417960020313
+      },
+      {
+       "partner": "Japan",
+       "usd": 341018642.017,
+       "share": 0.15294863152360524
+      },
+      {
+       "partner": "Other Asia, nes",
+       "usd": 232224835.42,
+       "share": 0.10415404440415556
+      },
+      {
+       "partner": "Rep. of Korea",
+       "usd": 185072150.695,
+       "share": 0.08300582048684481
+      },
+      {
+       "partner": "Indonesia",
+       "usd": 95577883.108,
+       "share": 0.04286717681716345
+      },
+      {
+       "partner": "Thailand",
+       "usd": 92844263.657,
+       "share": 0.04164113430035607
+      },
+      {
+       "partner": "Mexico",
+       "usd": 85476154.565,
+       "share": 0.038336499117151465
+      },
+      {
+       "partner": "USA",
+       "usd": 61760348.87,
+       "share": 0.027699837129772045
+      },
+      {
+       "partner": "France",
+       "usd": 19004610.645,
+       "share": 0.008523666546788924
+      },
+      {
+       "partner": "Germany",
+       "usd": 16966721.868,
+       "share": 0.007609662849524992
+      },
+      {
+       "partner": "Philippines",
+       "usd": 13651924.14,
+       "share": 0.0061229588579881245
+      },
+      {
+       "partner": "Viet Nam",
+       "usd": 12899149.03,
+       "share": 0.005785335312722256
+      }
+     ]
+    },
+    "CN": {
+     "year": 2025,
+     "total_usd": 276023147.0,
+     "korea_usd": 10236403.0,
+     "korea_share": 0.037085306472503916,
+     "top": [
+      {
+       "partner": "USA",
+       "usd": 95136807.0,
+       "share": 0.3446696700403898
+      },
+      {
+       "partner": "Other Asia, nes",
+       "usd": 60087484.0,
+       "share": 0.21769001858384
+      },
+      {
+       "partner": "Japan",
+       "usd": 41119629.0,
+       "share": 0.1489716693940889
+      },
+      {
+       "partner": "Germany",
+       "usd": 26237444.0,
+       "share": 0.09505523100205795
+      },
+      {
+       "partner": "Thailand",
+       "usd": 19196693.0,
+       "share": 0.0695474028487908
+      },
+      {
+       "partner": "Malaysia",
+       "usd": 14569460.0,
+       "share": 0.0527834718151373
+      },
+      {
+       "partner": "Rep. of Korea",
+       "usd": 10236403.0,
+       "share": 0.037085306472503916
+      },
+      {
+       "partner": "France",
+       "usd": 3447682.0,
+       "share": 0.012490553917204631
+      },
+      {
+       "partner": "Indonesia",
+       "usd": 1847874.0,
+       "share": 0.006694634200370159
+      },
+      {
+       "partner": "Norway",
+       "usd": 1567743.0,
+       "share": 0.005679751923124042
+      },
+      {
+       "partner": "Belgium",
+       "usd": 1286336.0,
+       "share": 0.004660246845167663
+      },
+      {
+       "partner": "Sweden",
+       "usd": 1078859.0,
+       "share": 0.003908581623410011
+      }
+     ]
+    }
+   },
+   "errors": [
+    "Comtrade US: https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=842&period=2025&cmdCode=390410&flowCode=M&includeDesc=true"
+   ]
+  },
+  {
+   "hs": "721049",
+   "name": "아연도금강판",
+   "customs": {},
+   "comtrade": {
+    "EU": {
+     "year": 2025,
+     "total_usd": 3103238502.646,
+     "korea_usd": 493501707.161,
+     "korea_share": 0.15902796602330502,
+     "top": [
+      {
+       "partner": "Viet Nam",
+       "usd": 528006742.378,
+       "share": 0.17014700672468167
+      },
+      {
+       "partner": "Rep. of Korea",
+       "usd": 493501707.161,
+       "share": 0.15902796602330502
+      },
+      {
+       "partner": "Türkiye",
+       "usd": 435939301.606,
+       "share": 0.14047882598591538
+      },
+      {
+       "partner": "China",
+       "usd": 422023528.292,
+       "share": 0.13599455147651668
+      },
+      {
+       "partner": "Other Asia, nes",
+       "usd": 359688699.537,
+       "share": 0.11590752667908338
+      },
+      {
+       "partner": "India",
+       "usd": 229356728.462,
+       "share": 0.07390883048996628
+      },
+      {
+       "partner": "United Arab Emirates",
+       "usd": 140718553.421,
+       "share": 0.04534571007062953
+      },
+      {
+       "partner": "Tunisia",
+       "usd": 128445556.418,
+       "share": 0.04139081037712052
+      },
+      {
+       "partner": "United Kingdom",
+       "usd": 70170194.278,
+       "share": 0.022611924355207907
+      },
+      {
+       "partner": "Egypt",
+       "usd": 56151235.12,
+       "share": 0.018094398826297823
+      },
+      {
+       "partner": "Japan",
+       "usd": 50253052.442,
+       "share": 0.016193744824689226
+      },
+      {
+       "partner": "South Africa",
+       "usd": 38523304.717,
+       "share": 0.012413903953612592
+      }
+     ]
+    }
+   },
+   "errors": [
+    "Comtrade US: https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=842&period=2025&cmdCode=721049&flowCode=M&includeDesc=true",
+    "Comtrade IN: https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=699&period=2025&cmdCode=721049&flowCode=M&includeDesc=true"
+   ]
+  }
+ ]
+}
