@@ -9,5 +9,11 @@
   "regular_lookback_days": 10,
   "max_fulltext_checks_per_run": 80,
 
-  "email_only_watched": true
+  "email_only_watched": true,
+
+  "_watch_hs_설명": "DATA 탭에 보여줄 품목. hs = HS코드(6~10자리), countries = 조사국 (US, CN, IN, EU, JP, VN, TR, BR, AU, CA 등)",
+  "watch_hs": [
+    {"hs": "390410", "name": "PVC 수지", "countries": ["IN", "US", "CN"]},
+    {"hs": "721049", "name": "아연도금강판", "countries": ["US", "EU", "IN"]}
+  ]
 }
