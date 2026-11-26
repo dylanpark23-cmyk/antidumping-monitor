@@ -29,7 +29,10 @@ def main() -> None:
             by_id = {r["id"]: r for r in res["records"]}
             fresh += [by_id[i] for i in res["new_ids"] if i in by_id]
         except Exception as e:
-            failed.append(name)
+            from collectors.common import load_store
+            # 무역위원회는 해외 서버 접속이 막혀 있어 기존(브라우저로 받아둔) 데이터를 유지
+            if not (name == "한국 무역위원회" and load_store("kr_ktc.json")):
+                failed.append(name)
             print(f"[오류] {name} 수집 실패: {e}")
             traceback.print_exc()
     try:
