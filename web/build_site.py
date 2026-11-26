@@ -307,6 +307,26 @@ addEventListener('hashchange',route);route();
 """
 
 
+def tag_watch_products(records: list) -> None:
+    """config.json 의 watch_products(관심 품목) 키워드가 제목·품목에 있으면 '관심품목' 태그를 붙여요.
+    한국 기업이 중국·베트남 등 해외 공장에서 만드는 품목(예: 타이어)을 원산지와 상관없이 잡기 위한 것."""
+    import re
+    try:
+        cfg = json.loads((ROOT / "config.json").read_text(encoding="utf-8"))
+    except Exception:
+        return
+    rules = []
+    for w in cfg.get("watch_products", []):
+        kws = [k for k in w.get("keywords", []) if k]
+        if kws:
+            rules.append((f"관심품목:{w.get('name', kws[0])}", re.compile("|".join((r"\b" + re.escape(k)) if k.isascii() else re.escape(k) for k in kws), re.I)))
+    for r in records:
+        text = f"{r.get('title') or ''} {r.get('product') or ''}"
+        for tag, rx in rules:
+            if rx.search(text) and tag not in (r.get("watch") or []):
+                r["watch"] = list(r.get("watch") or []) + [tag]
+
+
 STORES = ["us_fr.json", "kr_ktc.json", "cn_mofcom.json", "eu_tron.json", "in_dgtr.json"]
 
 
@@ -318,6 +338,7 @@ def build(failed_sources: list = None) -> None:
             r.setdefault("authority", "US")
             r.pop("raw_text_url", None)
             records.append(r)
+    tag_watch_products(records)
     records.sort(key=lambda r: (r.get("publication_date") or "", r.get("id")), reverse=True)
     trade = load_store("trade_data.json") or {"items": []}
     payload = {
