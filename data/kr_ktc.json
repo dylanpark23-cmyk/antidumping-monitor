@@ -1,0 +1,1602 @@
+[
+ {
+  "id": "KTC-00000873",
+  "source": "KR-KTC",
+  "authority": "KR",
+  "status": "진행",
+  "agency": "무역위원회",
+  "title": "중국, 미국, 말레이시아산 아크릴산 2-에틸헥실",
+  "product": "아크릴산 2-에틸헥실",
+  "countries": [
+   "중국",
+   "미국",
+   "말레이시아"
+  ],
+  "targets": [
+   "CN",
+   "OT",
+   "US"
+  ],
+  "stage": "신규 조사 개시(무역위)",
+  "priority": 1,
+  "remedy": "AD",
+  "case_numbers": [
+   "구제23-2026-10호"
+  ],
+  "watch": [
+   "국내제소"
+  ],
+  "snippets": [],
+  "abstract": "조사번호 구제23-2026-10호 · 조사 진행 중",
+  "publication_date": "2026-11-05",
+  "html_url": "https://www.ktc.go.kr/proInvestList.do",
+  "pdf_url": null,
+  "first_seen": "2026-11-26T07:32Z"
+ },
+ {
+  "id": "KTC-00000875",
+  "source": "KR-KTC",
+  "authority": "KR",
+  "status": "진행",
+  "agency": "무역위원회",
+  "title": "중국산 무계목강관의 덤핑사실 및 국내산업피해 유무 조사",
+  "product": "무계목강관",
+  "countries": [
+   "중국"
+  ],
+  "targets": [
+   "CN"
+  ],
+  "stage": "신규 조사 개시(무역위)",
+  "priority": 1,
+  "remedy": "AD",
+  "case_numbers": [
+   "구제 23-2026-9호"
+  ],
+  "watch": [
+   "국내제소"
+  ],
+  "snippets": [],
+  "abstract": "조사번호 구제 23-2026-9호 · 조사 진행 중",
+  "publication_date": "2026-10-08",
+  "html_url": "https://www.ktc.go.kr/proInvestList.do",
+  "pdf_url": null,
+  "first_seen": "2026-11-26T07:32Z"
+ },
+ {
+  "id": "KTC-00000872",
+  "source": "KR-KTC",
+  "authority": "KR",
+  "status": "진행",
+  "agency": "무역위원회",
+  "title": "중국산 폴리에스테르 장섬유 완전연신사에 대한 덤핑방지관세 부과 종료재심사(1차)",
+  "product": "폴리에스테르 장섬유 완전연신사(FDY)",
+  "countries": [
+   "중국"
+  ],
+  "targets": [
+   "CN"
+  ],
+  "stage": "일몰재심(종료재심사)",
+  "priority": 2,
+  "remedy": "AD",
+  "case_numbers": [
+   "구제 23-2026-8호"
+  ],
+  "watch": [
+   "국내제소"
+  ],
+  "snippets": [],
+  "abstract": "조사번호 구제 23-2026-8호 · 조사 진행 중",
+  "publication_date": "2026-09-03",
+  "html_url": "https://www.ktc.go.kr/proInvestList.do",
+  "pdf_url": null,
+  "first_seen": "2026-11-26T07:32Z"
+ },
+ {
+  "id": "KTC-00000870",
+  "source": "KR-KTC",
+  "authority": "KR",
+  "status": "진행",
+  "agency": "무역위원회",
+  "title": "대만, 태국, 아랍에미리트연합산 PET 필름 종료재심사(2차)",
+  "product": "PET 필름",
+  "countries": [
+   "대만",
+   "태국",
+   "아랍에미리트연합"
+  ],
+  "targets": [
+   "OT"
+  ],
+  "stage": "일몰재심(종료재심사)",
+  "priority": 2,
+  "remedy": "AD",
+  "case_numbers": [
+   "구제23-2026-7호"
+  ],
+  "watch": [
+   "국내제소"
+  ],
+  "snippets": [],
+  "abstract": "조사번호 구제23-2026-7호 · 조사 진행 중",
+  "publication_date": "2026-08-26",
+  "html_url": "https://www.ktc.go.kr/proInvestList.do",
+  "pdf_url": null,
+  "first_seen": "2026-11-26T07:32Z"
+ },
+ {
+  "id": "KTC-00000869",
+  "source": "KR-KTC",
+  "authority": "KR",
+  "status": "진행",
+  "agency": "무역위원회",
+  "title": "중국산 초산에틸",
+  "product": "초산에틸",
+  "countries": [
+   "중국"
+  ],
+  "targets": [
+   "CN"
+  ],
+  "stage": "신규 조사 개시(무역위)",
+  "priority": 1,
+  "remedy": "AD",
+  "case_numbers": [
+   "구제23-2026-6호"
+  ],
+  "watch": [
+   "국내제소"
+  ],
+  "snippets": [],
+  "abstract": "조사번호 구제23-2026-6호 · 조사 진행 중",
+  "publication_date": "2026-08-18",
+  "html_url": "https://www.ktc.go.kr/proInvestList.do",
+  "pdf_url": null,
+  "first_seen": "2026-11-26T07:32Z"
+ },
+ {
+  "id": "KTC-00000868",
+  "source": "KR-KTC",
+  "authority": "KR",
+  "status": "진행",
+  "agency": "무역위원회",
+  "title": "중국산 석도강판의 덤핑사실 및 국내산업피해 유무",
+  "product": "석도강판",
+  "countries": [
+   "중국"
+  ],
+  "targets": [
+   "CN"
+  ],
+  "stage": "신규 조사 개시(무역위)",
+  "priority": 1,
+  "remedy": "AD",
+  "case_numbers": [
+   "구제23-2026-5호"
+  ],
+  "watch": [
+   "국내제소"
+  ],
+  "snippets": [],
+  "abstract": "조사번호 구제23-2026-5호 · 조사 진행 중",
+  "publication_date": "2026-07-10",
+  "html_url": "https://www.ktc.go.kr/proInvestList.do",
+  "pdf_url": null,
+  "first_seen": "2026-11-26T07:32Z"
+ },
+ {
+  "id": "KTC-00000867",
+  "source": "KR-KTC",
+  "authority": "KR",
+  "status": "진행",
+  "agency": "무역위원회",
+  "title": "중국산 폴리염화비닐 서스펜션 수지의 덤핑사실 및 국내산업피해 유무",
+  "product": "폴리염화비닐 서스펜션 수지",
+  "countries": [
+   "중국"
+  ],
+  "targets": [
+   "CN"
+  ],
+  "stage": "신규 조사 개시(무역위)",
+  "priority": 1,
+  "remedy": "AD",
+  "case_numbers": [
+   "구제 23-2026-4호"
+  ],
+  "watch": [
+   "국내제소"
+  ],
+  "snippets": [],
+  "abstract": "조사번호 구제 23-2026-4호 · 조사 진행 중",
+  "publication_date": "2026-07-08",
+  "html_url": "https://www.ktc.go.kr/proInvestList.do",
+  "pdf_url": null,
+  "first_seen": "2026-11-26T07:32Z"
+ },
+ {
+  "id": "KTC-00000847",
+  "source": "KR-KTC",
+  "authority": "KR",
+  "status": "진행",
+  "agency": "무역위원회",
+  "title": "중국산 봉강의 덤핑사실 및 국내산업피해 유무 조사",
+  "product": "봉강",
+  "countries": [
+   "중국"
+  ],
+  "targets": [
+   "CN"
+  ],
+  "stage": "신규 조사 개시(무역위)",
+  "priority": 1,
+  "remedy": "AD",
+  "case_numbers": [
+   "구제 23-2025-10호"
+  ],
+  "watch": [
+   "국내제소"
+  ],
+  "snippets": [],
+  "abstract": "조사번호 구제 23-2025-10호 · 조사 진행 중",
+  "publication_date": "2026-05-07",
+  "html_url": "https://www.ktc.go.kr/proInvestList.do",
+  "pdf_url": null,
+  "first_seen": "2026-11-26T07:32Z"
+ },
+ {
+  "id": "KTC-00000860",
+  "source": "KR-KTC",
+  "authority": "KR",
+  "status": "진행",
+  "agency": "무역위원회",
+  "title": "중국 및 대만산 고체 수산화나트륨",
+  "product": "고체 수산화나트륨",
+  "countries": [
+   "중국",
+   "대만"
+  ],
+  "targets": [
+   "CN",
+   "OT"
+  ],
+  "stage": "신규 조사 개시(무역위)",
+  "priority": 1,
+  "remedy": "AD",
+  "case_numbers": [
+   "구제23-2026-2호"
+  ],
+  "watch": [
+   "국내제소"
+  ],
+  "snippets": [],
+  "abstract": "조사번호 구제23-2026-2호 · 조사 진행 중",
+  "publication_date": "2026-04-07",
+  "html_url": "https://www.ktc.go.kr/proInvestList.do",
+  "pdf_url": null,
+  "first_seen": "2026-11-26T07:32Z"
+ },
+ {
+  "id": "KTC-00000862",
+  "source": "KR-KTC",
+  "authority": "KR",
+  "status": "진행",
+  "agency": "무역위원회",
+  "title": "중국산 폴리(에틸렌 테레프탈레이트)에 대한 덤핑방지관세부과 중간재심사",
+  "product": "폴리(에틸렌 테레프탈레이트)",
+  "countries": [
+   "중국"
+  ],
+  "targets": [
+   "CN"
+  ],
+  "stage": "중간재심",
+  "priority": 2,
+  "remedy": "AD",
+  "case_numbers": [
+   "구제 23-2026-3호"
+  ],
+  "watch": [
+   "국내제소"
+  ],
+  "snippets": [],
+  "abstract": "조사번호 구제 23-2026-3호 · 조사 진행 중",
+  "publication_date": "2026-03-19",
+  "html_url": "https://www.ktc.go.kr/proInvestList.do",
+  "pdf_url": null,
+  "first_seen": "2026-11-26T07:32Z"
+ },
+ {
+  "id": "KTC-00000859",
+  "source": "KR-KTC",
+  "authority": "KR",
+  "status": "진행",
+  "agency": "무역위원회",
+  "title": "중국산 인쇄제판용 평면모양 사진플레이트에 대한 덤핑방지관세 부과 종료재심사(2차)",
+  "product": "인쇄제판용 평면모양 사진플레이트",
+  "countries": [
+   "중국"
+  ],
+  "targets": [
+   "CN"
+  ],
+  "stage": "일몰재심(종료재심사)",
+  "priority": 2,
+  "remedy": "AD",
+  "case_numbers": [
+   "구제 23-2025-13호"
+  ],
+  "watch": [
+   "국내제소"
+  ],
+  "snippets": [],
+  "abstract": "조사번호 구제 23-2025-13호 · 조사 진행 중",
+  "publication_date": "2026-01-08",
+  "html_url": "https://www.ktc.go.kr/proInvestList.do",
+  "pdf_url": null,
+  "first_seen": "2026-11-26T07:32Z"
+ },
+ {
+  "id": "KTC-00000852",
+  "source": "KR-KTC",
+  "authority": "KR",
+  "status": "진행",
+  "agency": "무역위원회",
+  "title": "중국산 에이치(H) 형강",
+  "product": "H형강",
+  "countries": [
+   "중국"
+  ],
+  "targets": [
+   "CN"
+  ],
+  "stage": "신규 조사 개시(무역위)",
+  "priority": 1,
+  "remedy": "AD",
+  "case_numbers": [
+   "구제23-2025-12호"
+  ],
+  "watch": [
+   "국내제소"
+  ],
+  "snippets": [],
+  "abstract": "조사번호 구제23-2025-12호 · 조사 진행 중",
+  "publication_date": "2025-12-01",
+  "html_url": "https://www.ktc.go.kr/proInvestList.do",
+  "pdf_url": null,
+  "first_seen": "2026-11-26T07:32Z"
+ },
+ {
+  "id": "KTC-00000856",
+  "source": "KR-KTC",
+  "authority": "KR",
+  "status": "진행",
+  "agency": "무역위원회",
+  "title": "중국산 아연 및 아연합금 표면처리 냉간압연 제품의 덤핑사실 및 국내산업피해 유무 조사",
+  "product": "철강",
+  "countries": [
+   "중국"
+  ],
+  "targets": [
+   "CN"
+  ],
+  "stage": "신규 조사 개시(무역위)",
+  "priority": 1,
+  "remedy": "AD",
+  "case_numbers": [
+   "구제23-2025-9호"
+  ],
+  "watch": [
+   "국내제소"
+  ],
+  "snippets": [],
+  "abstract": "조사번호 구제23-2025-9호 · 조사 진행 중",
+  "publication_date": "2025-11-28",
+  "html_url": "https://www.ktc.go.kr/proInvestList.do",
+  "pdf_url": null,
+  "first_seen": "2026-11-26T07:32Z"
+ },
+ {
+  "id": "KTC-00000846",
+  "source": "KR-KTC",
+  "authority": "KR",
+  "status": "종결",
+  "agency": "무역위원회",
+  "title": "중국산 부틸 아크릴레이트",
+  "product": "부틸 아크릴레이트",
+  "countries": [
+   "중국"
+  ],
+  "targets": [
+   "CN"
+  ],
+  "stage": "조사 종결",
+  "priority": 3,
+  "remedy": "AD",
+  "case_numbers": [
+   "구제23-2025-8호"
+  ],
+  "watch": [
+   "국내제소"
+  ],
+  "snippets": [],
+  "abstract": "조사번호 구제23-2025-8호 · 조사 종결",
+  "publication_date": "2025-09-29",
+  "html_url": "https://www.ktc.go.kr/comInvestList.do",
+  "pdf_url": null,
+  "first_seen": "2026-11-26T07:32Z"
+ },
+ {
+  "id": "KTC-00000844",
+  "source": "KR-KTC",
+  "authority": "KR",
+  "status": "진행",
+  "agency": "무역위원회",
+  "title": "태국산 이음매 없는 동관",
+  "product": "이음매 없는 동관",
+  "countries": [
+   "태국"
+  ],
+  "targets": [
+   "OT"
+  ],
+  "stage": "신규 조사 개시(무역위)",
+  "priority": 1,
+  "remedy": "AD",
+  "case_numbers": [
+   "구제23-2025-7호"
+  ],
+  "watch": [
+   "국내제소"
+  ],
+  "snippets": [],
+  "abstract": "조사번호 구제23-2025-7호 · 조사 진행 중",
+  "publication_date": "2025-09-12",
+  "html_url": "https://www.ktc.go.kr/proInvestList.do",
+  "pdf_url": null,
+  "first_seen": "2026-11-26T07:32Z"
+ },
+ {
+  "id": "KTC-00000843",
+  "source": "KR-KTC",
+  "authority": "KR",
+  "status": "종결",
+  "agency": "무역위원회",
+  "title": "독일, 프랑스, 노르웨이 및 스웨덴산 폴리염화비닐 페이스트 수지",
+  "product": "폴리염화비닐페이스트수지",
+  "countries": [
+   "독일",
+   "프랑스",
+   "노르웨이",
+   "스웨덴"
+  ],
+  "targets": [
+   "OT"
+  ],
+  "stage": "조사 종결",
+  "priority": 3,
+  "remedy": "AD",
+  "case_numbers": [
+   "구제23-2025-6호"
+  ],
+  "watch": [
+   "국내제소"
+  ],
+  "snippets": [],
+  "abstract": "조사번호 구제23-2025-6호 · 조사 종결",
+  "publication_date": "2025-08-06",
+  "html_url": "https://www.ktc.go.kr/comInvestList.do",
+  "pdf_url": null,
+  "first_seen": "2026-11-26T07:32Z"
+ },
+ {
+  "id": "KTC-00000841",
+  "source": "KR-KTC",
+  "authority": "KR",
+  "status": "종결",
+  "agency": "무역위원회",
+  "title": "사우디아라비아산 부틸글리콜에테르에 대한 덤핑방지관세부과 종료재심사(1차)",
+  "product": "부틸글리콜에테르",
+  "countries": [
+   "사우디아라비아"
+  ],
+  "targets": [
+   "OT"
+  ],
+  "stage": "조사 종결",
+  "priority": 3,
+  "remedy": "AD",
+  "case_numbers": [
+   "구제 23-2025-4호"
+  ],
+  "watch": [
+   "국내제소"
+  ],
+  "snippets": [],
+  "abstract": "조사번호 구제 23-2025-4호 · 조사 종결",
+  "publication_date": "2025-05-16",
+  "html_url": "https://www.ktc.go.kr/comInvestList.do",
+  "pdf_url": null,
+  "first_seen": "2026-11-26T07:32Z"
+ },
+ {
+  "id": "KTC-00000840",
+  "source": "KR-KTC",
+  "authority": "KR",
+  "status": "종결",
+  "agency": "무역위원회",
+  "title": "태국산 섬유판의 덤핑사실 및 국내산업피해 유무 조사",
+  "product": "섬유판",
+  "countries": [
+   "태국"
+  ],
+  "targets": [
+   "OT"
+  ],
+  "stage": "조사 종결",
+  "priority": 3,
+  "remedy": "AD",
+  "case_numbers": [
+   "구제 23-2025-5호"
+  ],
+  "watch": [
+   "국내제소"
+  ],
+  "snippets": [],
+  "abstract": "조사번호 구제 23-2025-5호 · 조사 종결",
+  "publication_date": "2025-05-07",
+  "html_url": "https://www.ktc.go.kr/comInvestList.do",
+  "pdf_url": null,
+  "first_seen": "2026-11-26T07:32Z"
+ },
+ {
+  "id": "KTC-00000819",
+  "source": "KR-KTC",
+  "authority": "KR",
+  "status": "종결",
+  "agency": "무역위원회",
+  "title": "일본 및 중국산 산업용로봇(4축이상 수직다관절형)에 대한 덤핑사실 및 국내산업피해 유무 조사",
+  "product": "4축이상 수직다관절형 산업용로봇",
+  "countries": [
+   "일본",
+   "중국"
+  ],
+  "targets": [
+   "CN",
+   "OT"
+  ],
+  "stage": "조사 종결",
+  "priority": 3,
+  "remedy": "AD",
+  "case_numbers": [
+   "구제23-2025-2호"
+  ],
+  "watch": [
+   "국내제소"
+  ],
+  "snippets": [],
+  "abstract": "조사번호 구제23-2025-2호 · 조사 종결",
+  "publication_date": "2025-05-02",
+  "html_url": "https://www.ktc.go.kr/comInvestList.do",
+  "pdf_url": null,
+  "first_seen": "2026-11-26T07:32Z"
+ },
+ {
+  "id": "KTC-00000839",
+  "source": "KR-KTC",
+  "authority": "KR",
+  "status": "종결",
+  "agency": "무역위원회",
+  "title": "중국산 PET 필름에 대한 덤핑방지관세 부과 중간재심사",
+  "product": "PET 필름",
+  "countries": [
+   "중국"
+  ],
+  "targets": [
+   "CN"
+  ],
+  "stage": "조사 종결",
+  "priority": 3,
+  "remedy": "AD",
+  "case_numbers": [
+   "구제 23-2025-3호"
+  ],
+  "watch": [
+   "국내제소"
+  ],
+  "snippets": [],
+  "abstract": "조사번호 구제 23-2025-3호 · 조사 종결",
+  "publication_date": "2025-04-09",
+  "html_url": "https://www.ktc.go.kr/comInvestList.do",
+  "pdf_url": null,
+  "first_seen": "2026-11-26T07:32Z"
+ },
+ {
+  "id": "KTC-00000833",
+  "source": "KR-KTC",
+  "authority": "KR",
+  "status": "진행",
+  "agency": "무역위원회",
+  "title": "중국산 단일모드 광섬유에 대한 덤핑사실 및 국내산업피해 유무 조사",
+  "product": "광섬유",
+  "countries": [
+   "중국"
+  ],
+  "targets": [
+   "CN"
+  ],
+  "stage": "신규 조사 개시(무역위)",
+  "priority": 1,
+  "remedy": "AD",
+  "case_numbers": [
+   "구제23-2025-1"
+  ],
+  "watch": [
+   "국내제소"
+  ],
+  "snippets": [],
+  "abstract": "조사번호 구제23-2025-1 · 조사 진행 중",
+  "publication_date": "2025-03-07",
+  "html_url": "https://www.ktc.go.kr/proInvestList.do",
+  "pdf_url": null,
+  "first_seen": "2026-11-26T07:32Z"
+ },
+ {
+  "id": "KTC-00000831",
+  "source": "KR-KTC",
+  "authority": "KR",
+  "status": "종결",
+  "agency": "무역위원회",
+  "title": "일본 및 중국산 탄소강 및 그 밖의 합금강 열간압연 제품의 덤핑사실 및 국내산업피해 유무 조사",
+  "product": "열간압연",
+  "countries": [
+   "일본",
+   "중국"
+  ],
+  "targets": [
+   "CN",
+   "OT"
+  ],
+  "stage": "조사 종결",
+  "priority": 3,
+  "remedy": "AD",
+  "case_numbers": [
+   "구제23-2024-11호"
+  ],
+  "watch": [
+   "국내제소"
+  ],
+  "snippets": [],
+  "abstract": "조사번호 구제23-2024-11호 · 조사 종결",
+  "publication_date": "2025-03-04",
+  "html_url": "https://www.ktc.go.kr/comInvestList.do",
+  "pdf_url": null,
+  "first_seen": "2026-11-26T07:32Z"
+ },
+ {
+  "id": "KTC-00000800",
+  "source": "KR-KTC",
+  "authority": "KR",
+  "status": "종결",
+  "agency": "무역위원회",
+  "title": "중국산 차아황산소다에 대한 덤핑사실 및 국내산업피해 유무 조사",
+  "product": "차아황산소다",
+  "countries": [
+   "중국"
+  ],
+  "targets": [
+   "CN"
+  ],
+  "stage": "조사 종결",
+  "priority": 3,
+  "remedy": "AD",
+  "case_numbers": [
+   "구제23-2024-9호"
+  ],
+  "watch": [
+   "국내제소"
+  ],
+  "snippets": [],
+  "abstract": "조사번호 구제23-2024-9호 · 조사 종결",
+  "publication_date": "2024-12-18",
+  "html_url": "https://www.ktc.go.kr/comInvestList.do",
+  "pdf_url": null,
+  "first_seen": "2026-11-26T07:32Z"
+ },
+ {
+  "id": "KTC-00000801",
+  "source": "KR-KTC",
+  "authority": "KR",
+  "status": "종결",
+  "agency": "무역위원회",
+  "title": "태국산 파티클보드의 덤핑사실 및 국내산업피해 유무 조사",
+  "product": "파티클보드",
+  "countries": [
+   "태국"
+  ],
+  "targets": [
+   "OT"
+  ],
+  "stage": "조사 종결",
+  "priority": 3,
+  "remedy": "AD",
+  "case_numbers": [
+   "구제 23-2024-10호"
+  ],
+  "watch": [
+   "국내제소"
+  ],
+  "snippets": [],
+  "abstract": "조사번호 구제 23-2024-10호 · 조사 종결",
+  "publication_date": "2024-12-16",
+  "html_url": "https://www.ktc.go.kr/comInvestList.do",
+  "pdf_url": null,
+  "first_seen": "2026-11-26T07:32Z"
+ },
+ {
+  "id": "KTC-00000799",
+  "source": "KR-KTC",
+  "authority": "KR",
+  "status": "종결",
+  "agency": "무역위원회",
+  "title": "중국산 탄소강 및 그 밖의 합금강 열간압연 후판제품",
+  "product": "탄소강 및 그 밖의 합금강 열간압연 후판",
+  "countries": [
+   "중국"
+  ],
+  "targets": [
+   "CN"
+  ],
+  "stage": "조사 종결",
+  "priority": 3,
+  "remedy": "AD",
+  "case_numbers": [
+   "구제 23-2024-8호"
+  ],
+  "watch": [
+   "국내제소"
+  ],
+  "snippets": [],
+  "abstract": "조사번호 구제 23-2024-8호 · 조사 종결",
+  "publication_date": "2024-10-04",
+  "html_url": "https://www.ktc.go.kr/comInvestList.do",
+  "pdf_url": null,
+  "first_seen": "2026-11-26T07:32Z"
+ },
+ {
+  "id": "KTC-00000798",
+  "source": "KR-KTC",
+  "authority": "KR",
+  "status": "종결",
+  "agency": "무역위원회",
+  "title": "중국산 스테인리스 스틸 후판의 덤핑사실 및 국내산업피해 유무 조사",
+  "product": "스테인리스스틸 후판",
+  "countries": [
+   "중국"
+  ],
+  "targets": [
+   "CN"
+  ],
+  "stage": "조사 종결",
+  "priority": 3,
+  "remedy": "AD",
+  "case_numbers": [
+   "구제 23-2024-7호"
+  ],
+  "watch": [
+   "국내제소"
+  ],
+  "snippets": [],
+  "abstract": "조사번호 구제 23-2024-7호 · 조사 종결",
+  "publication_date": "2024-09-06",
+  "html_url": "https://www.ktc.go.kr/comInvestList.do",
+  "pdf_url": null,
+  "first_seen": "2026-11-26T07:32Z"
+ },
+ {
+  "id": "KTC-00000795",
+  "source": "KR-KTC",
+  "authority": "KR",
+  "status": "종결",
+  "agency": "무역위원회",
+  "title": "중국 및 대만산 석유수지의 덤핑사실 및 국내산업피해 유무 조사",
+  "product": "석유수지",
+  "countries": [
+   "중국",
+   "대만"
+  ],
+  "targets": [
+   "CN",
+   "OT"
+  ],
+  "stage": "조사 종결",
+  "priority": 3,
+  "remedy": "AD",
+  "case_numbers": [
+   "구제 23-2024-6호"
+  ],
+  "watch": [
+   "국내제소"
+  ],
+  "snippets": [],
+  "abstract": "조사번호 구제 23-2024-6호 · 조사 종결",
+  "publication_date": "2024-08-02",
+  "html_url": "https://www.ktc.go.kr/comInvestList.do",
+  "pdf_url": null,
+  "first_seen": "2026-11-26T07:32Z"
+ },
+ {
+  "id": "KTC-00000781",
+  "source": "KR-KTC",
+  "authority": "KR",
+  "status": "종결",
+  "agency": "무역위원회",
+  "title": "베트남산 스테인리스강 냉간압연 제품의 덤핑사실 및 국내산업피해 유무 조사",
+  "product": "스테인리스강 냉간압연 제품",
+  "countries": [
+   "베트남"
+  ],
+  "targets": [
+   "OT"
+  ],
+  "stage": "조사 종결",
+  "priority": 3,
+  "remedy": "AD",
+  "case_numbers": [
+   "구제 23-2024-5호"
+  ],
+  "watch": [
+   "국내제소"
+  ],
+  "snippets": [],
+  "abstract": "조사번호 구제 23-2024-5호 · 조사 종결",
+  "publication_date": "2024-05-30",
+  "html_url": "https://www.ktc.go.kr/comInvestList.do",
+  "pdf_url": null,
+  "first_seen": "2026-11-26T07:32Z"
+ },
+ {
+  "id": "KTC-00000780",
+  "source": "KR-KTC",
+  "authority": "KR",
+  "status": "종결",
+  "agency": "무역위원회",
+  "title": "중국, 인도네시아 및 대만산 스테인리스강 평판압연 제품에 대한 덤핑방지관세부과 및 가격약속 종료재심사(1차)",
+  "product": "스테인리스강 평판압연 제품",
+  "countries": [
+   "중국",
+   "인도네시아",
+   "대만"
+  ],
+  "targets": [
+   "CN",
+   "OT"
+  ],
+  "stage": "조사 종결",
+  "priority": 3,
+  "remedy": "AD",
+  "case_numbers": [
+   "구제 23-2024-4호"
+  ],
+  "watch": [
+   "국내제소"
+  ],
+  "snippets": [],
+  "abstract": "조사번호 구제 23-2024-4호 · 조사 종결",
+  "publication_date": "2024-05-17",
+  "html_url": "https://www.ktc.go.kr/comInvestList.do",
+  "pdf_url": null,
+  "first_seen": "2026-11-26T07:32Z"
+ },
+ {
+  "id": "KTC-00000777",
+  "source": "KR-KTC",
+  "authority": "KR",
+  "status": "종결",
+  "agency": "무역위원회",
+  "title": "중국 인도네시아 및 태국산 폴리프로필렌 연신(OPP)필름에 대한 덤핑방지관세부과 종료재심사(2차)",
+  "product": "폴리프로필렌 연신필름,폴리프로필렌 연신필름",
+  "countries": [
+   "중국 인도네시아",
+   "태국"
+  ],
+  "targets": [
+   "CN",
+   "OT"
+  ],
+  "stage": "조사 종결",
+  "priority": 3,
+  "remedy": "AD",
+  "case_numbers": [
+   "구제 23-2024-3호"
+  ],
+  "watch": [
+   "국내제소"
+  ],
+  "snippets": [],
+  "abstract": "조사번호 구제 23-2024-3호 · 조사 종결",
+  "publication_date": "2024-04-26",
+  "html_url": "https://www.ktc.go.kr/comInvestList.do",
+  "pdf_url": null,
+  "first_seen": "2026-11-26T07:32Z"
+ },
+ {
+  "id": "KTC-00000776",
+  "source": "KR-KTC",
+  "authority": "KR",
+  "status": "종결",
+  "agency": "무역위원회",
+  "title": "중국산 스티렌모노머의 덤핑사실 및 국내산업피해 유무 조사",
+  "product": "스티렌모노머",
+  "countries": [
+   "중국"
+  ],
+  "targets": [
+   "CN"
+  ],
+  "stage": "조사 종결",
+  "priority": 3,
+  "remedy": "AD",
+  "case_numbers": [
+   "구제 23-2024-2호"
+  ],
+  "watch": [
+   "국내제소"
+  ],
+  "snippets": [],
+  "abstract": "조사번호 구제 23-2024-2호 · 조사 종결",
+  "publication_date": "2024-04-09",
+  "html_url": "https://www.ktc.go.kr/comInvestList.do",
+  "pdf_url": null,
+  "first_seen": "2026-11-26T07:32Z"
+ },
+ {
+  "id": "KTC-00000775",
+  "source": "KR-KTC",
+  "authority": "KR",
+  "status": "종결",
+  "agency": "무역위원회",
+  "title": "중국산 폴리에틸렌 테레프탈레리트 수지(PET 수지)의 덤핑사실 및 국내산업피해 유무 조사",
+  "product": "폴리에틸렌 테레프탈레리트 수지(PET 수지)",
+  "countries": [
+   "중국"
+  ],
+  "targets": [
+   "CN"
+  ],
+  "stage": "조사 종결",
+  "priority": 3,
+  "remedy": "AD",
+  "case_numbers": [
+   "구제 23-2024-1호"
+  ],
+  "watch": [
+   "국내제소"
+  ],
+  "snippets": [],
+  "abstract": "조사번호 구제 23-2024-1호 · 조사 종결",
+  "publication_date": "2024-01-12",
+  "html_url": "https://www.ktc.go.kr/comInvestList.do",
+  "pdf_url": null,
+  "first_seen": "2026-11-26T07:32Z"
+ },
+ {
+  "id": "KTC-00000772",
+  "source": "KR-KTC",
+  "authority": "KR",
+  "status": "종결",
+  "agency": "무역위원회",
+  "title": "베트남산 합판에 대한 덤핑방지관세부과 종료재심사(1차)",
+  "product": "합판",
+  "countries": [
+   "베트남"
+  ],
+  "targets": [
+   "OT"
+  ],
+  "stage": "조사 종결",
+  "priority": 3,
+  "remedy": "AD",
+  "case_numbers": [
+   "구제 23-2023-5호"
+  ],
+  "watch": [
+   "국내제소"
+  ],
+  "snippets": [],
+  "abstract": "조사번호 구제 23-2023-5호 · 조사 종결",
+  "publication_date": "2023-07-03",
+  "html_url": "https://www.ktc.go.kr/comInvestList.do",
+  "pdf_url": null,
+  "first_seen": "2026-11-26T07:32Z"
+ },
+ {
+  "id": "KTC-00000773",
+  "source": "KR-KTC",
+  "authority": "KR",
+  "status": "종결",
+  "agency": "무역위원회",
+  "title": "중국산 합판에 대한 덤핑방지관세부과 종료재심사(3차)",
+  "product": "합판",
+  "countries": [
+   "중국"
+  ],
+  "targets": [
+   "CN"
+  ],
+  "stage": "조사 종결",
+  "priority": 3,
+  "remedy": "AD",
+  "case_numbers": [
+   "구제 23-2023-6호"
+  ],
+  "watch": [
+   "국내제소"
+  ],
+  "snippets": [],
+  "abstract": "조사번호 구제 23-2023-6호 · 조사 종결",
+  "publication_date": "2023-07-03",
+  "html_url": "https://www.ktc.go.kr/comInvestList.do",
+  "pdf_url": null,
+  "first_seen": "2026-11-26T07:32Z"
+ },
+ {
+  "id": "KTC-00000771",
+  "source": "KR-KTC",
+  "authority": "KR",
+  "status": "종결",
+  "agency": "무역위원회",
+  "title": "중국산 침엽수 합판에 대한 덤핑방지관세부과 종료재심사(2차)",
+  "product": "침엽수 합판",
+  "countries": [
+   "중국"
+  ],
+  "targets": [
+   "CN"
+  ],
+  "stage": "조사 종결",
+  "priority": 3,
+  "remedy": "AD",
+  "case_numbers": [
+   "구제 23-2023-7호"
+  ],
+  "watch": [
+   "국내제소"
+  ],
+  "snippets": [],
+  "abstract": "조사번호 구제 23-2023-7호 · 조사 종결",
+  "publication_date": "2023-07-03",
+  "html_url": "https://www.ktc.go.kr/comInvestList.do",
+  "pdf_url": null,
+  "first_seen": "2026-11-26T07:32Z"
+ },
+ {
+  "id": "KTC-00000517",
+  "source": "KR-KTC",
+  "authority": "KR",
+  "status": "종결",
+  "agency": "무역위원회",
+  "title": "대두유",
+  "product": "대두유",
+  "countries": [],
+  "targets": [],
+  "stage": "조사 종결",
+  "priority": 3,
+  "remedy": "CVD",
+  "case_numbers": [
+   ""
+  ],
+  "watch": [
+   "국내제소"
+  ],
+  "snippets": [],
+  "abstract": "조사번호  · 조사 종결",
+  "publication_date": "1900-01-01",
+  "html_url": "https://www.ktc.go.kr/comInvestList.do",
+  "pdf_url": null,
+  "first_seen": "2026-11-26T07:32Z"
+ },
+ {
+  "id": "KTC-00000516",
+  "source": "KR-KTC",
+  "authority": "KR",
+  "status": "종결",
+  "agency": "무역위원회",
+  "title": "대두박",
+  "product": "대두박",
+  "countries": [],
+  "targets": [],
+  "stage": "조사 종결",
+  "priority": 3,
+  "remedy": "CVD",
+  "case_numbers": [
+   ""
+  ],
+  "watch": [
+   "국내제소"
+  ],
+  "snippets": [],
+  "abstract": "조사번호  · 조사 종결",
+  "publication_date": "1900-01-01",
+  "html_url": "https://www.ktc.go.kr/comInvestList.do",
+  "pdf_url": null,
+  "first_seen": "2026-11-26T07:32Z"
+ },
+ {
+  "id": "KTC-00000515",
+  "source": "KR-KTC",
+  "authority": "KR",
+  "status": "종결",
+  "agency": "무역위원회",
+  "title": "미역",
+  "product": "미역",
+  "countries": [],
+  "targets": [],
+  "stage": "조사 종결",
+  "priority": 3,
+  "remedy": "CVD",
+  "case_numbers": [
+   ""
+  ],
+  "watch": [
+   "국내제소"
+  ],
+  "snippets": [],
+  "abstract": "조사번호  · 조사 종결",
+  "publication_date": "1900-01-01",
+  "html_url": "https://www.ktc.go.kr/comInvestList.do",
+  "pdf_url": null,
+  "first_seen": "2026-11-26T07:32Z"
+ },
+ {
+  "id": "KTC-00000514",
+  "source": "KR-KTC",
+  "authority": "KR",
+  "status": "종결",
+  "agency": "무역위원회",
+  "title": "식물성매트류",
+  "product": "식물성매트류",
+  "countries": [],
+  "targets": [],
+  "stage": "조사 종결",
+  "priority": 3,
+  "remedy": "CVD",
+  "case_numbers": [
+   ""
+  ],
+  "watch": [
+   "국내제소"
+  ],
+  "snippets": [],
+  "abstract": "조사번호  · 조사 종결",
+  "publication_date": "1900-01-01",
+  "html_url": "https://www.ktc.go.kr/comInvestList.do",
+  "pdf_url": null,
+  "first_seen": "2026-11-26T07:32Z"
+ },
+ {
+  "id": "KTC-00000513",
+  "source": "KR-KTC",
+  "authority": "KR",
+  "status": "종결",
+  "agency": "무역위원회",
+  "title": "볼베어링",
+  "product": "볼베어링",
+  "countries": [],
+  "targets": [],
+  "stage": "조사 종결",
+  "priority": 3,
+  "remedy": "CVD",
+  "case_numbers": [
+   ""
+  ],
+  "watch": [
+   "국내제소"
+  ],
+  "snippets": [],
+  "abstract": "조사번호  · 조사 종결",
+  "publication_date": "1900-01-01",
+  "html_url": "https://www.ktc.go.kr/comInvestList.do",
+  "pdf_url": null,
+  "first_seen": "2026-11-26T07:32Z"
+ },
+ {
+  "id": "KTC-00000512",
+  "source": "KR-KTC",
+  "authority": "KR",
+  "status": "종결",
+  "agency": "무역위원회",
+  "title": "우산 및 우산틀",
+  "product": "우산 및 우산틀",
+  "countries": [
+   "우"
+  ],
+  "targets": [
+   "OT"
+  ],
+  "stage": "조사 종결",
+  "priority": 3,
+  "remedy": "CVD",
+  "case_numbers": [
+   ""
+  ],
+  "watch": [
+   "국내제소"
+  ],
+  "snippets": [],
+  "abstract": "조사번호  · 조사 종결",
+  "publication_date": "1900-01-01",
+  "html_url": "https://www.ktc.go.kr/comInvestList.do",
+  "pdf_url": null,
+  "first_seen": "2026-11-26T07:32Z"
+ },
+ {
+  "id": "KTC-00000511",
+  "source": "KR-KTC",
+  "authority": "KR",
+  "status": "종결",
+  "agency": "무역위원회",
+  "title": "이쑤시개 및 기타 목제품",
+  "product": "이쑤시개 및 기타 목제품",
+  "countries": [],
+  "targets": [],
+  "stage": "조사 종결",
+  "priority": 3,
+  "remedy": "CVD",
+  "case_numbers": [
+   ""
+  ],
+  "watch": [
+   "국내제소"
+  ],
+  "snippets": [],
+  "abstract": "조사번호  · 조사 종결",
+  "publication_date": "1900-01-01",
+  "html_url": "https://www.ktc.go.kr/comInvestList.do",
+  "pdf_url": null,
+  "first_seen": "2026-11-26T07:32Z"
+ },
+ {
+  "id": "KTC-00000510",
+  "source": "KR-KTC",
+  "authority": "KR",
+  "status": "종결",
+  "agency": "무역위원회",
+  "title": "컴퓨터주기판",
+  "product": "컴퓨터주기판",
+  "countries": [],
+  "targets": [],
+  "stage": "조사 종결",
+  "priority": 3,
+  "remedy": "CVD",
+  "case_numbers": [
+   ""
+  ],
+  "watch": [
+   "국내제소"
+  ],
+  "snippets": [],
+  "abstract": "조사번호  · 조사 종결",
+  "publication_date": "1900-01-01",
+  "html_url": "https://www.ktc.go.kr/comInvestList.do",
+  "pdf_url": null,
+  "first_seen": "2026-11-26T07:32Z"
+ },
+ {
+  "id": "KTC-00000509",
+  "source": "KR-KTC",
+  "authority": "KR",
+  "status": "종결",
+  "agency": "무역위원회",
+  "title": "당면",
+  "product": "당면",
+  "countries": [],
+  "targets": [],
+  "stage": "조사 종결",
+  "priority": 3,
+  "remedy": "CVD",
+  "case_numbers": [
+   ""
+  ],
+  "watch": [
+   "국내제소"
+  ],
+  "snippets": [],
+  "abstract": "조사번호  · 조사 종결",
+  "publication_date": "1900-01-01",
+  "html_url": "https://www.ktc.go.kr/comInvestList.do",
+  "pdf_url": null,
+  "first_seen": "2026-11-26T07:32Z"
+ },
+ {
+  "id": "KTC-00000508",
+  "source": "KR-KTC",
+  "authority": "KR",
+  "status": "종결",
+  "agency": "무역위원회",
+  "title": "팝콘 옥수수",
+  "product": "팝콘 옥수수",
+  "countries": [],
+  "targets": [],
+  "stage": "조사 종결",
+  "priority": 3,
+  "remedy": "CVD",
+  "case_numbers": [
+   ""
+  ],
+  "watch": [
+   "국내제소"
+  ],
+  "snippets": [],
+  "abstract": "조사번호  · 조사 종결",
+  "publication_date": "1900-01-01",
+  "html_url": "https://www.ktc.go.kr/comInvestList.do",
+  "pdf_url": null,
+  "first_seen": "2026-11-26T07:32Z"
+ },
+ {
+  "id": "KTC-00000507",
+  "source": "KR-KTC",
+  "authority": "KR",
+  "status": "종결",
+  "agency": "무역위원회",
+  "title": "활석분",
+  "product": "활석분",
+  "countries": [],
+  "targets": [],
+  "stage": "조사 종결",
+  "priority": 3,
+  "remedy": "CVD",
+  "case_numbers": [
+   ""
+  ],
+  "watch": [
+   "국내제소"
+  ],
+  "snippets": [],
+  "abstract": "조사번호  · 조사 종결",
+  "publication_date": "1900-01-01",
+  "html_url": "https://www.ktc.go.kr/comInvestList.do",
+  "pdf_url": null,
+  "first_seen": "2026-11-26T07:32Z"
+ },
+ {
+  "id": "KTC-00000506",
+  "source": "KR-KTC",
+  "authority": "KR",
+  "status": "종결",
+  "agency": "무역위원회",
+  "title": "목할저",
+  "product": "목할저",
+  "countries": [],
+  "targets": [],
+  "stage": "조사 종결",
+  "priority": 3,
+  "remedy": "CVD",
+  "case_numbers": [
+   ""
+  ],
+  "watch": [
+   "국내제소"
+  ],
+  "snippets": [],
+  "abstract": "조사번호  · 조사 종결",
+  "publication_date": "1900-01-01",
+  "html_url": "https://www.ktc.go.kr/comInvestList.do",
+  "pdf_url": null,
+  "first_seen": "2026-11-26T07:32Z"
+ },
+ {
+  "id": "KTC-00000505",
+  "source": "KR-KTC",
+  "authority": "KR",
+  "status": "종결",
+  "agency": "무역위원회",
+  "title": "코코아분유",
+  "product": "코코아분유",
+  "countries": [],
+  "targets": [],
+  "stage": "조사 종결",
+  "priority": 3,
+  "remedy": "CVD",
+  "case_numbers": [
+   ""
+  ],
+  "watch": [
+   "국내제소"
+  ],
+  "snippets": [],
+  "abstract": "조사번호  · 조사 종결",
+  "publication_date": "1900-01-01",
+  "html_url": "https://www.ktc.go.kr/comInvestList.do",
+  "pdf_url": null,
+  "first_seen": "2026-11-26T07:32Z"
+ },
+ {
+  "id": "KTC-00000504",
+  "source": "KR-KTC",
+  "authority": "KR",
+  "status": "종결",
+  "agency": "무역위원회",
+  "title": "우모분",
+  "product": "우모분",
+  "countries": [],
+  "targets": [],
+  "stage": "조사 종결",
+  "priority": 3,
+  "remedy": "CVD",
+  "case_numbers": [
+   ""
+  ],
+  "watch": [
+   "국내제소"
+  ],
+  "snippets": [],
+  "abstract": "조사번호  · 조사 종결",
+  "publication_date": "1900-01-01",
+  "html_url": "https://www.ktc.go.kr/comInvestList.do",
+  "pdf_url": null,
+  "first_seen": "2026-11-26T07:32Z"
+ },
+ {
+  "id": "KTC-00000503",
+  "source": "KR-KTC",
+  "authority": "KR",
+  "status": "종결",
+  "agency": "무역위원회",
+  "title": "L-LDPE 필름",
+  "product": "L-LDPE 필름",
+  "countries": [],
+  "targets": [],
+  "stage": "조사 종결",
+  "priority": 3,
+  "remedy": "CVD",
+  "case_numbers": [
+   ""
+  ],
+  "watch": [
+   "국내제소"
+  ],
+  "snippets": [],
+  "abstract": "조사번호  · 조사 종결",
+  "publication_date": "1900-01-01",
+  "html_url": "https://www.ktc.go.kr/comInvestList.do",
+  "pdf_url": null,
+  "first_seen": "2026-11-26T07:32Z"
+ },
+ {
+  "id": "KTC-00000502",
+  "source": "KR-KTC",
+  "authority": "KR",
+  "status": "종결",
+  "agency": "무역위원회",
+  "title": "압연기용롤",
+  "product": "압연기용롤",
+  "countries": [],
+  "targets": [],
+  "stage": "조사 종결",
+  "priority": 3,
+  "remedy": "CVD",
+  "case_numbers": [
+   ""
+  ],
+  "watch": [
+   "국내제소"
+  ],
+  "snippets": [],
+  "abstract": "조사번호  · 조사 종결",
+  "publication_date": "1900-01-01",
+  "html_url": "https://www.ktc.go.kr/comInvestList.do",
+  "pdf_url": null,
+  "first_seen": "2026-11-26T07:32Z"
+ },
+ {
+  "id": "KTC-00000501",
+  "source": "KR-KTC",
+  "authority": "KR",
+  "status": "종결",
+  "agency": "무역위원회",
+  "title": "초산에틸",
+  "product": "초산에틸",
+  "countries": [],
+  "targets": [],
+  "stage": "조사 종결",
+  "priority": 3,
+  "remedy": "CVD",
+  "case_numbers": [
+   ""
+  ],
+  "watch": [
+   "국내제소"
+  ],
+  "snippets": [],
+  "abstract": "조사번호  · 조사 종결",
+  "publication_date": "1900-01-01",
+  "html_url": "https://www.ktc.go.kr/comInvestList.do",
+  "pdf_url": null,
+  "first_seen": "2026-11-26T07:32Z"
+ },
+ {
+  "id": "KTC-00000500",
+  "source": "KR-KTC",
+  "authority": "KR",
+  "status": "종결",
+  "agency": "무역위원회",
+  "title": "스테아린산",
+  "product": "스테아린산",
+  "countries": [
+   "스테아린"
+  ],
+  "targets": [
+   "OT"
+  ],
+  "stage": "조사 종결",
+  "priority": 3,
+  "remedy": "CVD",
+  "case_numbers": [
+   ""
+  ],
+  "watch": [
+   "국내제소"
+  ],
+  "snippets": [],
+  "abstract": "조사번호  · 조사 종결",
+  "publication_date": "1900-01-01",
+  "html_url": "https://www.ktc.go.kr/comInvestList.do",
+  "pdf_url": null,
+  "first_seen": "2026-11-26T07:32Z"
+ },
+ {
+  "id": "KTC-00000499",
+  "source": "KR-KTC",
+  "authority": "KR",
+  "status": "종결",
+  "agency": "무역위원회",
+  "title": "집성운모절연제품",
+  "product": "집성운모절연제품",
+  "countries": [],
+  "targets": [],
+  "stage": "조사 종결",
+  "priority": 3,
+  "remedy": "CVD",
+  "case_numbers": [
+   ""
+  ],
+  "watch": [
+   "국내제소"
+  ],
+  "snippets": [],
+  "abstract": "조사번호  · 조사 종결",
+  "publication_date": "1900-01-01",
+  "html_url": "https://www.ktc.go.kr/comInvestList.do",
+  "pdf_url": null,
+  "first_seen": "2026-11-26T07:32Z"
+ },
+ {
+  "id": "KTC-00000498",
+  "source": "KR-KTC",
+  "authority": "KR",
+  "status": "종결",
+  "agency": "무역위원회",
+  "title": "돼지고기통조림",
+  "product": "돼지고기통조림",
+  "countries": [],
+  "targets": [],
+  "stage": "조사 종결",
+  "priority": 3,
+  "remedy": "CVD",
+  "case_numbers": [
+   ""
+  ],
+  "watch": [
+   "국내제소"
+  ],
+  "snippets": [],
+  "abstract": "조사번호  · 조사 종결",
+  "publication_date": "1900-01-01",
+  "html_url": "https://www.ktc.go.kr/comInvestList.do",
+  "pdf_url": null,
+  "first_seen": "2026-11-26T07:32Z"
+ }
+]
