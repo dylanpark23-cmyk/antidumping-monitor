@@ -12,7 +12,7 @@ import time
 import urllib.parse
 import xml.etree.ElementTree as ET
 
-from collectors.common import _get, get_json, load_config, save_store
+from collectors.common import RateLimited, _get, get_json, load_config, save_store
 
 CUSTOMS = "https://apis.data.go.kr/1220000/nitemtrade/getNitemtradeList"
 COMTRADE_PREVIEW = "https://comtradeapi.un.org/public/v1/preview/C/A/HS"
@@ -63,7 +63,16 @@ def comtrade_imports(reporter: str, hs: str) -> dict:
         q = {"reporterCode": code, "period": year, "cmdCode": hs[:6], "flowCode": "M", "includeDesc": "true"}
         if key:
             q["subscription-key"] = key
-        data = get_json(f"{COMTRADE_FULL if key else COMTRADE_PREVIEW}?{urllib.parse.urlencode(q)}")
+        url = f"{COMTRADE_FULL if key else COMTRADE_PREVIEW}?{urllib.parse.urlencode(q)}"
+        for attempt in range(3):   # 공개 API는 요청 간격이 짧으면 429를 돌려줌 → 기다렸다 재시도
+            try:
+                data = get_json(url)
+                break
+            except RateLimited:
+                time.sleep(8 * (attempt + 1))
+        else:
+            raise RuntimeError(f"요청 제한으로 {year}년 자료를 못 받음")
+        time.sleep(3)
         rows = [r for r in (data.get("data") or []) if r.get("partnerCode") not in (0, None)
                 and (r.get("customsCode") in (None, "C00")) and (r.get("motCode") in (None, 0))
                 and (r.get("partner2Code") in (None, 0))]
@@ -102,7 +111,7 @@ def run() -> dict:
                     entry["comtrade"][c] = ct
             except Exception as e:
                 entry["errors"].append(f"Comtrade {c}: {e}")
-            time.sleep(1.2)
+            time.sleep(3)
         out["items"].append(entry)
     save_store("trade_data.json", out)
     print(f"[DATA] 품목 {len(items)}개 갱신 (관세청 {'사용' if key else '키 없음 — 건너뜀'})")
