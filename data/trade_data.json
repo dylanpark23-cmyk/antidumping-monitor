@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T07:39Z",
+ "updated": "2026-11-26T07:48Z",
  "customs_enabled": false,
  "items": [
   {
@@ -75,6 +75,74 @@
       }
      ]
     },
+    "US": {
+     "year": 2025,
+     "total_usd": 294341900.0,
+     "korea_usd": 226492.0,
+     "korea_share": 0.000769486097630001,
+     "top": [
+      {
+       "partner": "Canada",
+       "usd": 119139640.0,
+       "share": 0.404766157995175
+      },
+      {
+       "partner": "Germany",
+       "usd": 65200353.0,
+       "share": 0.22151230592722274
+      },
+      {
+       "partner": "Mexico",
+       "usd": 34904689.0,
+       "share": 0.11858552587993758
+      },
+      {
+       "partner": "Colombia",
+       "usd": 28060647.0,
+       "share": 0.0953335118105849
+      },
+      {
+       "partner": "France",
+       "usd": 16448132.0,
+       "share": 0.055881041740914225
+      },
+      {
+       "partner": "Japan",
+       "usd": 11869661.0,
+       "share": 0.040326100361518354
+      },
+      {
+       "partner": "Belgium",
+       "usd": 5947896.0,
+       "share": 0.020207439036032587
+      },
+      {
+       "partner": "Portugal",
+       "usd": 3114692.0,
+       "share": 0.01058188453631644
+      },
+      {
+       "partner": "Spain",
+       "usd": 2518585.0,
+       "share": 0.00855666488529156
+      },
+      {
+       "partner": "Malaysia",
+       "usd": 2446839.0,
+       "share": 0.00831291433533588
+      },
+      {
+       "partner": "Israel",
+       "usd": 881650.0,
+       "share": 0.002995326183598054
+      },
+      {
+       "partner": "China",
+       "usd": 695778.0,
+       "share": 0.002363842864369633
+      }
+     ]
+    },
     "CN": {
      "year": 2025,
      "total_usd": 276023147.0,
@@ -144,15 +212,81 @@
      ]
     }
    },
-   "errors": [
-    "Comtrade US: https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=842&period=2025&cmdCode=390410&flowCode=M&includeDesc=true"
-   ]
+   "errors": []
   },
   {
    "hs": "721049",
    "name": "아연도금강판",
    "customs": {},
    "comtrade": {
+    "US": {
+     "year": 2025,
+     "total_usd": 1047071588.0,
+     "korea_usd": 91316628.0,
+     "korea_share": 0.08721144671151176,
+     "top": [
+      {
+       "partner": "Canada",
+       "usd": 555590465.0,
+       "share": 0.530613638424883
+      },
+      {
+       "partner": "Rep. of Korea",
+       "usd": 91316628.0,
+       "share": 0.08721144671151176
+      },
+      {
+       "partner": "Mexico",
+       "usd": 51838570.0,
+       "share": 0.04950814308601027
+      },
+      {
+       "partner": "Brazil",
+       "usd": 47524296.0,
+       "share": 0.045387819271054466
+      },
+      {
+       "partner": "Indonesia",
+       "usd": 45079827.0,
+       "share": 0.04305324250666231
+      },
+      {
+       "partner": "Other Asia, nes",
+       "usd": 39051645.0,
+       "share": 0.0372960602193324
+      },
+      {
+       "partner": "South Africa",
+       "usd": 34580747.0,
+       "share": 0.03302615350880861
+      },
+      {
+       "partner": "United Arab Emirates",
+       "usd": 27257932.0,
+       "share": 0.026032539047368363
+      },
+      {
+       "partner": "Pakistan",
+       "usd": 27078538.0,
+       "share": 0.025861209787692185
+      },
+      {
+       "partner": "Japan",
+       "usd": 19661995.0,
+       "share": 0.01877808091188508
+      },
+      {
+       "partner": "Thailand",
+       "usd": 17943088.0,
+       "share": 0.017136448171870364
+      },
+      {
+       "partner": "Austria",
+       "usd": 16373578.0,
+       "share": 0.015637496220554502
+      }
+     ]
+    },
     "EU": {
      "year": 2025,
      "total_usd": 3103238502.646,
@@ -220,12 +354,77 @@
        "share": 0.012413903953612592
       }
      ]
+    },
+    "IN": {
+     "year": 2025,
+     "total_usd": 425844450.121,
+     "korea_usd": 324242827.001,
+     "korea_share": 0.7614114189086395,
+     "top": [
+      {
+       "partner": "Rep. of Korea",
+       "usd": 324242827.001,
+       "share": 0.7614114189086395
+      },
+      {
+       "partner": "Japan",
+       "usd": 54756533.341,
+       "share": 0.1285834142618071
+      },
+      {
+       "partner": "China",
+       "usd": 35516943.61,
+       "share": 0.0834035610888158
+      },
+      {
+       "partner": "Nepal",
+       "usd": 5818776.648,
+       "share": 0.013664089425955053
+      },
+      {
+       "partner": "Viet Nam",
+       "usd": 2448761.199,
+       "share": 0.005750365417006622
+      },
+      {
+       "partner": "Germany",
+       "usd": 1635368.631,
+       "share": 0.0038402957477438634
+      },
+      {
+       "partner": "France",
+       "usd": 386146.872,
+       "share": 0.000906779158188582
+      },
+      {
+       "partner": "United Arab Emirates",
+       "usd": 242000.317,
+       "share": 0.0005682833648089995
+      },
+      {
+       "partner": "Belgium",
+       "usd": 218181.743,
+       "share": 0.0005123507960195455
+      },
+      {
+       "partner": "Finland",
+       "usd": 111649.719,
+       "share": 0.0002621842763672879
+      },
+      {
+       "partner": "Italy",
+       "usd": 80439.719,
+       "share": 0.00018889460453727587
+      },
+      {
+       "partner": "Saudi Arabia",
+       "usd": 76081.71,
+       "share": 0.00017866079968491323
+      }
+     ]
     }
    },
-   "errors": [
-    "Comtrade US: https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=842&period=2025&cmdCode=721049&flowCode=M&includeDesc=true",
-    "Comtrade IN: https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=699&period=2025&cmdCode=721049&flowCode=M&includeDesc=true"
-   ]
+   "errors": []
   }
  ]
 }
