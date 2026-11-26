@@ -169,9 +169,9 @@ const grp=r=>r.priority===1?'new':(/판정|명령/.test(r.stage)?'det':(/재심/
 $('upd').textContent='업데이트 '+D.built_at;
 $('gnb').innerHTML=SECTIONS.map(s=>`<a href="#${s.id}" data-r="${s.id}">${esc(s.name)}</a>`).join('')+`<a class="data" href="#data" data-r="data">DATA</a>`;
 
-const st={q:'',period:60,kr:null};
+const st={q:'',kr:null};
 function card(r){
-  return `<article class="it${isW(r)?' w':''}"><div class="meta"><span>${esc(r.publication_date)}</span><span>${esc(r.agency)}</span>
+  return `<article class="it${isW(r)?' w':''}"><div class="meta"><span>${r.publication_date&&r.publication_date>'1990'?esc(r.publication_date):'날짜 미상'}</span><span>${esc(r.agency)}</span>
   <span class="tag${r.priority===1?' p1':''}">${esc(r.stage)}</span><span class="tag">${esc(r.remedy)}</span>
   ${r.status==='게재예정'?'<span class="tag pi">게재예정</span>':''}${(r.watch||[]).map(w=>`<span class="tag w">${esc(w)}</span>`).join('')}</div>
   <h3><a href="${esc(r.html_url)}">${esc(r.title)}</a></h3>
@@ -182,29 +182,27 @@ function card(r){
 }
 function controls(krOn,showKr=true){
   return `<div class="ctrl"><input type="search" id="q" value="${esc(st.q)}" placeholder="품목·국가·사건번호 검색 (예: nails, A-580)" aria-label="검색">
-  <select id="period" aria-label="기간">${[[14,'최근 2주'],[60,'최근 60일'],[365,'최근 1년'],[99999,'전체']].map(([v,l])=>`<option value="${v}"${st.period==v?' selected':''}>${l}</option>`).join('')}</select>
   ${showKr?`<label class="tg"><input type="checkbox" id="kr"${krOn?' checked':''}> 한국 관련만</label>`:''}</div><p class="cline" id="cline" aria-live="polite"></p><div class="list" id="list"></div>`;
 }
 let shown=50,rowsNow=[];
 function fill(base,krOn){
   const q=st.q.trim().toLowerCase();
-  rowsNow=base.filter(r=>days(r.publication_date)<=st.period&&(!krOn||isW(r))&&(!q||[r.title,r.product,r.agency,(r.countries||[]).join(' '),(r.case_numbers||[]).join(' '),r.abstract,(r.snippets||[]).join(' ')].join(' ').toLowerCase().includes(q)));
-  const pl={14:'최근 2주',60:'최근 60일',365:'최근 1년',99999:'전체 기간'}[st.period]||'';
-  const c=$('cline');if(c)c.innerHTML=`${esc(pl)}${$('kr')?' · '+(krOn?'한국 관련':'모든 국가'):''}${q?` · "${esc(st.q)}"`:''} <b>${rowsNow.length}건</b>`;
+  rowsNow=base.filter(r=>(!krOn||isW(r))&&(!q||[r.title,r.product,r.agency,(r.countries||[]).join(' '),(r.case_numbers||[]).join(' '),r.abstract,(r.snippets||[]).join(' ')].join(' ').toLowerCase().includes(q)));
+  rowsNow.sort((a,b)=>(b.publication_date||'').localeCompare(a.publication_date||'')||String(b.id).localeCompare(String(a.id)));
+  const c=$('cline');if(c)c.innerHTML=`최신순${$('kr')?' · '+(krOn?'한국 관련':'모든 국가'):''}${q?` · "${esc(st.q)}"`:''} <b>${rowsNow.length}건</b>`;
   const L=$('list');if(L){L.style.opacity=.35;setTimeout(()=>L.style.opacity=1,120)}
   shown=50;paint();
 }
 function paint(){
   const L=$('list');if(!L)return;
   L.innerHTML=rowsNow.length?rowsNow.slice(0,shown).map(card).join('')+(rowsNow.length>shown?`<button class="more" id="more">더보기 (${rowsNow.length-shown}건 남음)</button>`:''):
-   '<div class="empty"><p>조건에 맞는 공고가 없어요. "한국 관련만"을 끄거나 기간을 넓혀보세요.</p></div>';
+   '<div class="empty"><p>조건에 맞는 공고가 없어요. "한국 관련만"을 끄거나 검색어를 바꿔보세요.</p></div>';
   const m=$('more');if(m)m.addEventListener('click',()=>{shown+=50;paint()});
 }
 function wire(base,krDefault){
   let kr=$('kr')?(st.kr??krDefault):false;
   const go=()=>fill(base,kr);
   $('q').addEventListener('input',e=>{st.q=e.target.value;go()});
-  $('period').addEventListener('change',e=>{st.period=+e.target.value;go()});
   if($('kr'))$('kr').addEventListener('change',e=>{kr=e.target.checked;st.kr=kr;go()});
   go();
 }
@@ -221,8 +219,8 @@ function home(){
    <aside class="notice"><div class="nt"><b>NOTICE</b><a href="#us-file">더보기 +</a></div>
    ${notice.length?`<ul>${notice.map(r=>`<li><a href="${esc(r.html_url)}" title="${esc(r.title)}">${esc(r.product||r.title)} · ${esc(r.stage)}</a><time>${esc(r.publication_date)}</time></li>`).join('')}</ul>`:'<p class="em">아직 한국 관련 공고가 없어요.</p>'}
    </aside></section>
-  <div class="tiles">${SECTIONS.map(s=>{const n=recent(R.filter(r=>s.test(r)&&(!s.krDefault||isW(r))),60).length;return `<a class="tile" href="#${s.id}"><h3>${esc(s.name.replace(/(제소|피제소)$/,''))}<span>${esc(s.name.match(/(피제소|제소)$/)[0])}</span><em class="st ${s.live?'live':'soon'}">${s.live?'연결됨':'준비 중'}</em></h3>
-    <div class="n">${s.live?n:'–'}<small>${s.live?(s.krDefault?'최근 60일 · 한국 관련':'최근 60일'):''}</small></div><p>${esc(s.desc)}</p></a>`}).join('')}</div></div>
+  <div class="tiles">${SECTIONS.map(s=>{const n=R.filter(r=>s.test(r)&&(!s.krDefault||isW(r))).length;return `<a class="tile" href="#${s.id}"><h3>${esc(s.name.replace(/(제소|피제소)$/,''))}<span>${esc(s.name.match(/(피제소|제소)$/)[0])}</span><em class="st ${s.live?'live':'soon'}">${s.live?'연결됨':'준비 중'}</em></h3>
+    <div class="n">${s.live?n:'–'}<small>${s.live?(s.krDefault?'전체 · 한국 관련':'전체'):''}</small></div><p>${esc(s.desc)}</p></a>`}).join('')}</div></div>
   <section class="kband"><div class="wrap">${[['최근 2주 한국 피제소',w14.length],['그중 신규 조사',n1],['국내제소 진행 중',ktcOpen],['누적 수집',R.length]].map(([l,v])=>`<div class="k"><b>${v}</b><span>${l}</span></div>`).join('')}</div></section>
   <div class="wrap"><h2 class="sec">최근 한국 피제소 공고</h2>${controls(st.kr??true)}</div>`;
   wire(R.filter(r=>r.auth!=='KR'),true);
