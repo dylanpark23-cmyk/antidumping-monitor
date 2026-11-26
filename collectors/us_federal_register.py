@@ -11,7 +11,7 @@ import sys
 import time
 import urllib.parse
 
-from collectors.common import get_json, get_text, load_config, load_store, save_store
+from collectors.common import RateLimited, get_json, get_text, load_config, load_store, save_store
 
 API = "https://www.federalregister.gov/api/v1"
 STORE = "us_fr.json"
@@ -244,10 +244,13 @@ def run(today: dt.date = None) -> dict:
                 rec["snippets"] = fulltext_snippets(raw, cfg)
                 rec["case_numbers"] = sorted(set(rec["case_numbers"]) | set(CASE_NO.findall(raw)))[:40]
             rec["fulltext_checked"] = True
+        except RateLimited:
+            print("[안내] 본문 확인 요청이 많아 이번 실행은 여기까지 — 남은 공고는 다음 실행 때 확인", file=sys.stderr)
+            break
         except Exception as e:
             print(f"[경고] 본문 확인 실패 {rec['id']}: {e}", file=sys.stderr)
         budget -= 1
-        time.sleep(0.4)
+        time.sleep(1.5)
 
     records = sorted(store.values(), key=lambda r: (r.get("publication_date") or "9999", r["id"]), reverse=True)
     save_store(STORE, records)

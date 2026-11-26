@@ -10,6 +10,10 @@ DATA_DIR = ROOT / "data"
 UA = "AntidumpingHub/1.0 (trade remedy monitoring; contact via GitHub repo)"
 
 
+class RateLimited(RuntimeError):
+    """서버가 HTTP 429(요청 과다)를 돌려줌."""
+
+
 def _get(url: str, retries: int = 3, timeout: int = 60) -> bytes:
     last = None
     for attempt in range(retries):
@@ -17,6 +21,13 @@ def _get(url: str, retries: int = 3, timeout: int = 60) -> bytes:
             req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "*/*"})
             with urllib.request.urlopen(req, timeout=timeout) as r:
                 return r.read()
+        except urllib.error.HTTPError as e:
+            last = e
+            if e.code == 429:  # 요청 과다: 재시도하지 않고 바로 알림 (호출한 쪽에서 중단)
+                raise RateLimited(url) from e
+            if 400 <= e.code < 500:
+                break
+            time.sleep(2 * (attempt + 1))
         except (urllib.error.URLError, TimeoutError) as e:
             last = e
             time.sleep(2 * (attempt + 1))
