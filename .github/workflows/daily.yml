@@ -30,6 +30,9 @@ jobs:
           MAIL_USER: ${{ secrets.MAIL_USER }}
           MAIL_PASS: ${{ secrets.MAIL_PASS }}
           MAIL_TO: ${{ secrets.MAIL_TO }}
+          CUSTOMS_KEY: ${{ secrets.CUSTOMS_KEY }}
+          COMTRADE_KEY: ${{ secrets.COMTRADE_KEY }}
+          PYTHONUNBUFFERED: "1"
           SITE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
         run: python run_all.py
       - name: 결과 저장
