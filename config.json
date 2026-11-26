@@ -3,7 +3,12 @@
 
   "watch_countries": ["Korea"],
   "watch_country_codes": ["580"],
-  "watch_companies": [],
+  "watch_companies": ["Hankook", "Kumho", "Nexen"],
+
+  "_watch_products_설명": "원산지가 한국이 아니어도 한국 기업이 걸리는 품목(해외 공장 생산 등). 제목·품목명에 키워드가 있으면 피제소 탭 '한국 관련'에 포함돼요.",
+  "watch_products": [
+    {"name": "타이어", "keywords": ["tire", "tyre", "轮胎", "타이어"]}
+  ],
 
   "first_run_days": 120,
   "regular_lookback_days": 10,
