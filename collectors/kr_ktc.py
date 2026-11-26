@@ -51,8 +51,12 @@ def run() -> dict:
     for menu, label, page_url, max_pages in LISTS:
         for code, remedy in TYPES.items():
             for page in range(1, max_pages + 1):
-                html_text = post_form(URL, {"menuId": menu, "pageIndex": str(page),
-                                            "process_step_code": "11000005", "invstg_type_code": code})
+                try:
+                    html_text = post_form(URL, {"menuId": menu, "pageIndex": str(page),
+                                                "process_step_code": "11000005", "invstg_type_code": code})
+                except (TimeoutError, OSError) as e:
+                    raise RuntimeError("무역위원회 사이트가 해외 서버(GitHub) 접속을 막는 것으로 보여요. "
+                                       "기존 데이터는 그대로 유지됩니다. (" + str(e) + ")") from None
                 rows = [r for r in parse_rows(html_text) if r["mid"]]
                 if not rows:
                     break

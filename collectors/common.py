@@ -37,10 +37,10 @@ def _get(url: str, retries: int = 3, timeout: int = 60) -> bytes:
     raise RuntimeError(f"요청 실패: {url} ({last})")
 
 
-def post_form(url: str, data: dict) -> str:
+def post_form(url: str, data: dict, timeout: int = 20) -> str:
     body = urllib.parse.urlencode(data).encode()
     req = urllib.request.Request(url, data=body, headers={"User-Agent": UA, "Content-Type": "application/x-www-form-urlencoded"})
-    with urllib.request.urlopen(req, timeout=60) as r:
+    with urllib.request.urlopen(req, timeout=timeout) as r:
         return r.read().decode("utf-8", errors="replace")
 
 
