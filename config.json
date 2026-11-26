@@ -1,0 +1,13 @@
+{
+  "_설명": "이 파일만 고치면 감시 대상을 바꿀 수 있어요. 수정 후 저장(Commit)하면 다음 실행부터 반영됩니다.",
+
+  "watch_countries": ["Korea"],
+  "watch_country_codes": ["580"],
+  "watch_companies": [],
+
+  "first_run_days": 120,
+  "regular_lookback_days": 10,
+  "max_fulltext_checks_per_run": 80,
+
+  "email_only_watched": true
+}
