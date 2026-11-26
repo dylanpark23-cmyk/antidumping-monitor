@@ -114,6 +114,13 @@ details li,details p{color:var(--mute)}
 .dgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:20px}
 .dcard{border:1px solid var(--line);border-top:3px solid var(--or);padding:18px 20px}
 .dcard h3{margin:0 0 6px;font-size:18px}.dcard p{margin:4px 0;font-size:15px;color:var(--mute)}.dcard ul{margin:8px 0 0;padding-left:18px;font-size:15px}
+
+.bars{display:flex;align-items:flex-end;gap:2px;height:120px;margin-top:10px;border-bottom:1px solid var(--line)}.bars i{flex:1;background:var(--or);min-height:1px;opacity:.85}
+.bx{display:flex;justify-content:space-between;font-size:12px;color:var(--mute);margin-top:4px}
+.kv{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:10px;font-size:13px;color:var(--mute)}.kv b{display:block;color:var(--ink);font-size:17px;font-weight:500;font-variant-numeric:tabular-nums}
+.hb{margin-top:12px;display:grid;gap:4px}.hb div{display:grid;grid-template-columns:minmax(0,9em) minmax(0,1fr) 4em;gap:8px;align-items:center;font-size:13px}
+.hb span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.hb em{background:var(--soft);height:12px;display:block}.hb em i{display:block;height:100%;background:var(--mute)}
+.hb b{text-align:right;font-weight:500;font-variant-numeric:tabular-nums}.hb .kr span,.hb .kr b{color:var(--or);font-weight:700}.hb .kr em i{background:var(--or)}
 footer{margin-top:56px;background:var(--soft);border-top:1px solid var(--line);padding:22px 0;font-size:13px;color:var(--mute)}
 @media(max-width:960px){.hero{grid-template-columns:minmax(0,1fr)}.sub{grid-template-columns:minmax(0,1fr);gap:0}.lnb{border-right:0;padding-bottom:0}.lnb .ttl{margin-top:0}.lnb ul{display:flex;overflow-x:auto;margin:0;gap:4px}.lnb li a{white-space:nowrap;border-bottom:0;padding:0 12px}.lnb li a.on::before{display:none}}
 @media(max-width:600px){.tiles{grid-template-columns:repeat(2,minmax(0,1fr))}.kband .wrap,.dgrid{grid-template-columns:repeat(2,minmax(0,1fr))}.dgrid{grid-template-columns:minmax(0,1fr)}nav.gnb{flex-wrap:nowrap;overflow-x:auto;width:100%}nav.gnb a{font-size:15px;padding:10px 9px}nav.gnb a.data{margin-left:0;padding-left:12px}.fig{min-height:130px}.tile{min-height:0;padding:14px}.tile .n{font-size:24px}}
@@ -126,7 +133,7 @@ footer{margin-top:56px;background:var(--soft);border-top:1px solid var(--line);p
 </header>
 <div class="band"></div>
 <main id="app"></main>
-<footer><div class="wrap">출처: FederalRegister.gov (미국 상무부·ITC) — 하루 2회 자동 갱신. "게재예정"은 정식 게재 전날 공개된 공고입니다. 본 사이트 정보는 참고용이며 원문을 확인하세요.</div></footer>
+<footer><div class="wrap">출처: 미국 Federal Register · 한국 무역위원회 · 중국 상무부 · EU TRON · 인도 DGTR · 관세청 · UN Comtrade — 하루 2회 자동 갱신. "게재예정"은 정식 게재 전날 공개된 공고입니다. 본 사이트 정보는 참고용이며 원문을 확인하세요.</div></footer>
 <script id="data" type="application/json">__DATA__</script>
 <script>
 {
@@ -137,21 +144,23 @@ const $=id=>document.getElementById(id);
 const days=d=>d?Math.round((TODAY-new Date(d+'T00:00:00Z'))/864e5):9999;
 const isW=r=>!!(r.watch&&r.watch.length);
 const cc=c=>/korea/i.test(c)?'KR':(/taiwan/i.test(c)?'OT':(/china/i.test(c)?'CN':(/united states/i.test(c)?'US':'OT')));
-R.forEach(r=>{r.auth=r.authority||'US';r.tg=[...new Set((r.countries||[]).map(cc))]});
+R.forEach(r=>{r.auth=r.authority||'US';r.tg=r.targets?r.targets:[...new Set((r.countries||[]).map(cc))]});
+const CN_KO={US:'미국',CN:'중국',IN:'인도',EU:'EU',JP:'일본',VN:'베트남',TR:'튀르키예',BR:'브라질',AU:'호주',CA:'캐나다',MX:'멕시코',ID:'인도네시아',TH:'태국',MY:'말레이시아',GB:'영국',ZA:'남아공'};
+const usd=v=>v>=1e9?'$'+(v/1e9).toFixed(2)+'B':v>=1e6?'$'+(v/1e6).toFixed(1)+'M':v>=1e3?'$'+(v/1e3).toFixed(0)+'K':'$'+Math.round(v);
 
 /* 메뉴 정의 — 이름·설명·데이터 출처를 여기서 바꾸면 됩니다 */
 const SECTIONS=[
- {id:'cn-file',name:'중국제소',full:'중국 제소',desc:'중국 상무부(MOFCOM)가 조사하는 무역구제 사건',test:r=>r.auth==='CN',krDefault:true,live:false,
-  plan:['중국 상무부 무역구제조사국 공고 (개시·예비·최종·재심)','한국산 대상 사건 우선 표시']},
+ {id:'cn-file',name:'중국제소',full:'중국 제소',desc:'중국 상무부(MOFCOM)가 조사하는 무역구제 사건',test:r=>r.auth==='CN',krDefault:true,live:true,
+  plan:['중국 상무부 공고(立案·初裁·终裁·复审)를 매일 수집','제목에 韩国가 있으면 한국 관련으로 표시']},
  {id:'cn-resp',name:'중국피제소',full:'중국 피제소',desc:'세계 각국이 중국산 제품을 조사하는 사건',test:r=>r.tg.includes('CN'),krDefault:false,live:true,
-  plan:['현재: 미국 상무부·ITC의 중국산 조사 자동 분류','예정: 무역위원회(한국)·EU·인도 등의 중국산 조사']},
+  plan:['미국·EU·인도·한국(무역위원회)의 중국산 조사를 자동 분류']},
  {id:'us-file',name:'미국제소',full:'미국 제소',desc:'미국 상무부(ITA)·국제무역위원회(ITC)가 조사하는 사건',test:r=>r.auth==='US',krDefault:true,live:true,plan:[]},
- {id:'us-resp',name:'미국피제소',full:'미국 피제소',desc:'세계 각국이 미국산 제품을 조사하는 사건',test:r=>r.tg.includes('US'),krDefault:false,live:false,
-  plan:['무역위원회(한국)의 미국산 조사','중국·EU·인도 등의 미국산 조사']},
- {id:'third-file',name:'제3국제소',full:'제3국 제소',desc:'미국·중국 외 국가(EU, 인도, 호주, 캐나다 등)가 조사하는 사건',test:r=>!['US','CN','KR'].includes(r.auth),krDefault:true,live:false,
-  plan:['EU 집행위원회 (Official Journal)','인도 DGTR','호주 ADC · 캐나다 CBSA · 브라질 · 튀르키예 등']},
+ {id:'us-resp',name:'미국피제소',full:'미국 피제소',desc:'세계 각국이 미국산 제품을 조사하는 사건',test:r=>r.tg.includes('US'),krDefault:false,live:true,
+  plan:['중국·EU·인도·한국(무역위원회)의 미국산 조사를 자동 분류']},
+ {id:'third-file',name:'제3국제소',full:'제3국 제소',desc:'미국·중국 외 국가(EU, 인도)가 조사하는 사건',test:r=>!['US','CN','KR'].includes(r.auth),krDefault:true,live:true,
+  plan:['EU 집행위원회 공고(TRON)','인도 DGTR 사건 타임라인']},
  {id:'third-resp',name:'제3국피제소',full:'제3국 피제소',desc:'미국·중국·한국 외 국가 제품이 조사받는 사건',test:r=>r.tg.includes('OT'),krDefault:false,live:true,
-  plan:['현재: 미국 상무부·ITC의 제3국산 조사 자동 분류','예정: 무역위원회(한국)·EU 등의 제3국산 조사']},
+  plan:['미국·중국·EU·인도·한국(무역위원회)의 제3국산 조사를 자동 분류']},
 ];
 const GROUPS=[['all','전체'],['new','신규 조사'],['det','예비·최종판정'],['rev','재심'],['etc','기타']];
 const grp=r=>r.priority===1?'new':(/판정|명령/.test(r.stage)?'det':(/재심/.test(r.stage)?'rev':'etc'));
@@ -178,7 +187,7 @@ function controls(krOn){
 let shown=50,rowsNow=[];
 function fill(base,krOn){
   const q=st.q.trim().toLowerCase();
-  rowsNow=base.filter(r=>days(r.publication_date)<=st.period&&(!krOn||isW(r))&&(!q||[r.title,r.product,(r.countries||[]).join(' '),(r.case_numbers||[]).join(' '),r.abstract,(r.snippets||[]).join(' ')].join(' ').toLowerCase().includes(q)));
+  rowsNow=base.filter(r=>days(r.publication_date)<=st.period&&(!krOn||isW(r))&&(!q||[r.title,r.product,r.agency,(r.countries||[]).join(' '),(r.case_numbers||[]).join(' '),r.abstract,(r.snippets||[]).join(' ')].join(' ').toLowerCase().includes(q)));
   const pl={14:'최근 2주',60:'최근 60일',365:'최근 1년',99999:'전체 기간'}[st.period]||'';
   const c=$('cline');if(c)c.innerHTML=`${esc(pl)} · ${krOn?'한국 관련':'모든 국가'}${q?` · "${esc(st.q)}"`:''} <b>${rowsNow.length}건</b>`;
   const L=$('list');if(L){L.style.opacity=.35;setTimeout(()=>L.style.opacity=1,120)}
@@ -206,7 +215,7 @@ function home(){
   $('app').innerHTML=`<div class="wrap">
   <section class="hero"><div class="hp"><p class="eyebrow">글로벌 무역구제 모니터</p>
    <h1>${n1?`최근 2주, 한국 관련 신규 조사 ${n1}건`:`최근 2주 한국 관련 공고 ${w14.length}건`}</h1>
-   <p class="s">흰 바늘이 한국 관련 공고, 점은 신규 조사 개시예요. 최근 60일.</p>
+   <p class="s">미국·중국·EU·인도·한국 조사당국 공고 · 흰 바늘이 한국 관련, 점은 신규 조사 개시 · 최근 60일</p>
    <div class="fig"><svg id="scale" role="img" aria-label="최근 60일 공고 눈금자"></svg></div></div>
    <aside class="notice"><div class="nt"><b>NOTICE</b><a href="#us-file">더보기 +</a></div>
    ${notice.length?`<ul>${notice.map(r=>`<li><a href="${esc(r.html_url)}" title="${esc(r.title)}">${esc(r.product||r.title)} · ${esc(r.stage)}</a><time>${esc(r.publication_date)}</time></li>`).join('')}</ul>`:'<p class="em">아직 한국 관련 공고가 없어요.</p>'}
@@ -246,20 +255,40 @@ function section(sec,g){
   if($('list'))wire(base,sec.krDefault);
 }
 function data(sub){
-  const subs=[['kita','KITA 한국 수출입'],['comtrade','UN Comtrade 세계 교역']];
+  const T=D.trade||{items:[]};
+  const subs=[['kita','KITA(관세청) 한국 수출입'],['comtrade','UN Comtrade 조사국 수입']];
   const cur=subs.find(x=>x[0]===sub)||subs[0];
   const items=subs.map(([k,l])=>`<li><a href="#data-${k}" class="${k===cur[0]?'on':''}">${l}</a></li>`).join('');
-  const C={kita:[['품목별 한국 수출입 추이','사건 품목(HS코드)의 국가별 월간 수출입 금액·중량. 관세청 수출입무역통계 API로 연결 예정 (KITA 통계와 같은 통관 원자료).',['사건 HS코드 자동 연결','조사대상기간(POI) 전후 비교','단가(금액÷중량) 추이']],
-              ['사건 연동','사건 화면에서 "통계 보기"를 누르면 해당 품목 통계로 이동',['반덤핑 부과 전후 수입 변화','제3국 우회 의심 신호']]],
-           comtrade:[['세계 교역 구조','UN Comtrade로 각국의 품목별 수입 상대국 비중을 보여줄 예정',['조사국의 수입 상위 국가','한국 점유율 변화']],
-              ['유의 사항','월별 자료는 약 6개월, 연간 자료는 약 18개월 늦게 공개돼요. 최근 동향은 KITA(관세청) 자료를 보세요.',['무료 키: 하루 500회 호출']]]};
-  const body=`<p class="lead">무역구제 판단에 필요한 교역 통계</p><p>2단계(관세청)·4단계(UN Comtrade)에서 연결할 예정이에요.</p>
-   <div class="dgrid">${C[cur[0]].map(([h,p,l])=>`<div class="dcard"><h3>${esc(h)}<em class="st soon">준비 중</em></h3><p>${esc(p)}</p><ul>${l.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div>`).join('')}</div>`;
+  let body='';
+  if(!T.items||!T.items.length){body='<div class="empty"><h3>보여줄 품목이 없어요</h3><p>config.json 의 watch_hs 에 HS코드를 추가하면 다음 갱신 때 나타나요.</p></div>'}
+  else if(cur[0]==='kita'){
+    body=`<p class="lead">관심 품목의 한국 → 조사국 월별 수출 (최근 24개월)</p><p>관세청 품목별·국가별 수출입실적 API · KITA 무역통계와 같은 통관 원자료 · 금액 USD</p>`;
+    if(!T.customs_enabled)body+=`<div class="empty"><h3>관세청 API 키가 아직 없어요</h3><p>공공데이터포털에서 "관세청_품목별 국가별 수출입실적(GW)" 활용신청 → 발급된 일반 인증키(Decoding)를 GitHub 저장소 Settings → Secrets → Actions 에 <b>CUSTOMS_KEY</b> 이름으로 등록하면 다음 갱신부터 채워져요.</p></div>`;
+    else body+='<div class="dgrid">'+T.items.map(it=>Object.entries(it.customs||{}).map(([c,rows])=>{
+      if(!rows.length)return '';
+      const mx=Math.max(...rows.map(r=>r.exp_usd),1),last=rows[rows.length-1];
+      const s12=rows.slice(-12).reduce((a,r)=>a+r.exp_usd,0),p12=rows.slice(-24,-12).reduce((a,r)=>a+r.exp_usd,0);
+      const yoy=p12?((s12/p12-1)*100).toFixed(1)+'%':'–';
+      const up=last.exp_kg?(last.exp_usd/last.exp_kg).toFixed(2):'–';
+      return `<div class="dcard"><h3>${esc(it.name)} <small style="color:var(--mute);font-weight:400">HS ${esc(it.hs)} · 한국→${esc(CN_KO[c]||c)}</small></h3>
+      <div class="bars">${rows.map(r=>`<i style="height:${(r.exp_usd/mx*100).toFixed(1)}%" title="${esc(r.ym)} ${usd(r.exp_usd)}"></i>`).join('')}</div>
+      <div class="bx"><span>${esc(rows[0].ym)}</span><span>${esc(last.ym)}</span></div>
+      <div class="kv"><span>최근월 수출<b>${usd(last.exp_usd)}</b></span><span>최근 12개월<b>${usd(s12)}</b></span><span>전년 대비<b>${yoy}</b></span><span>단가 $/kg<b>${up}</b></span></div></div>`}).join('')).join('')+'</div>';
+  } else {
+    body=`<p class="lead">조사국의 해당 품목 수입 상대국 구성</p><p>UN Comtrade 연간 자료 (공개 미리보기 API) · 연간 자료는 1~2년 늦게 공개돼요</p>`;
+    const cc2=T.items.map(it=>Object.entries(it.comtrade||{}).map(([c,ct])=>`<div class="dcard"><h3>${esc(CN_KO[c]||c)}의 ${esc(it.name)} 수입 <small style="color:var(--mute);font-weight:400">HS ${esc(it.hs.slice(0,6))} · ${esc(ct.year)}</small></h3>
+      <div class="kv"><span>총수입<b>${usd(ct.total_usd)}</b></span><span>한국산<b>${usd(ct.korea_usd)}</b></span><span>한국 비중<b>${(ct.korea_share*100).toFixed(1)}%</b></span></div>
+      <div class="hb">${ct.top.map(t=>`<div class="${/korea/i.test(t.partner)?'kr':''}"><span>${esc(t.partner)}</span><em><i style="width:${(t.share*100).toFixed(1)}%"></i></em><b>${(t.share*100).toFixed(1)}%</b></div>`).join('')}</div></div>`).join('')).join('');
+    body+=cc2?`<div class="dgrid">${cc2}</div>`:'<div class="empty"><p>아직 받아온 Comtrade 자료가 없어요. 다음 갱신 뒤 다시 확인해 주세요.</p></div>';
+  }
+  const errs=(T.items||[]).flatMap(i=>i.errors||[]);
+  if(errs.length)body+=`<details style="margin-top:16px"><summary>수집 중 문제 ${errs.length}건</summary><ul>${errs.map(e=>`<li>${esc(e)}</li>`).join('')}</ul></details>`;
   $('app').innerHTML=shell('DATA','DATA',items,['DATA',cur[1]],body);
 }
 function src(){
   const items=`<li><a class="on" href="#src">데이터 출처</a></li>`;
-  const rows=[['미국 상무부·ITC','Federal Register API','연결됨'],['중국 상무부','MOFCOM 무역구제조사국','준비 중'],['한국 무역위원회','ktc.go.kr 공고·월간통계','준비 중'],['EU·인도·기타','각국 관보·조사당국','준비 중'],['한국 수출입 통계','관세청 API (KITA 동일 원자료)','준비 중'],['세계 교역 통계','UN Comtrade API','준비 중']];
+  const F=D.failed||[],n=a=>R.filter(r=>r.auth===a).length,stt=(nm,k)=>F.includes(nm)?'이번 갱신 실패':(k?k+'건':'연결됨');
+  const rows=[['미국 상무부·ITC','Federal Register API',stt('미국 Federal Register',n('US'))],['한국 무역위원회','ktc.go.kr 조사 진행·종결 목록',stt('한국 무역위원회',n('KR'))],['중국 상무부','mofcom.gov.cn 공고',stt('중국 상무부',n('CN'))],['EU 집행위원회','TRON 공고 API',stt('EU',n('EU'))],['인도 DGTR','dgtr.gov.in 사건 타임라인',stt('인도 DGTR',n('IN'))],['한국 수출입 통계','관세청 API (KITA 동일 원자료)',(D.trade&&D.trade.customs_enabled)?'연결됨':'키 등록 필요'],['세계 교역 통계','UN Comtrade 공개 API','연결됨']];
   $('app').innerHTML=shell('데이터 출처','안내',items,['안내','데이터 출처'],`<div class="scroll"><table style="width:100%;border-collapse:collapse;margin-top:20px;font-size:15px"><thead><tr>${['구분','출처','상태'].map(h=>`<th style="text-align:left;border-bottom:2px solid var(--ink);padding:8px">${h}</th>`).join('')}</tr></thead><tbody>${rows.map(r=>`<tr>${r.map(c=>`<td style="border-bottom:1px solid var(--line);padding:10px 8px;white-space:nowrap">${esc(c)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`);
 }
 
@@ -279,14 +308,24 @@ addEventListener('hashchange',route);route();
 """
 
 
-def build() -> None:
+STORES = ["us_fr.json", "kr_ktc.json", "cn_mofcom.json", "eu_tron.json", "in_dgtr.json"]
+
+
+def build(failed_sources: list = None) -> None:
     now = dt.datetime.utcnow() + dt.timedelta(hours=9)
-    records = load_store("us_fr.json")
-    for r in records:
-        r.setdefault("authority", "US")
+    records = []
+    for name in STORES:
+        for r in load_store(name):
+            r.setdefault("authority", "US")
+            r.pop("raw_text_url", None)
+            records.append(r)
+    records.sort(key=lambda r: (r.get("publication_date") or "", r.get("id")), reverse=True)
+    trade = load_store("trade_data.json") or {"items": []}
     payload = {
         "built": now.date().isoformat(),
         "built_at": now.strftime("%m/%d %H:%M KST"),
+        "failed": failed_sources or [],
+        "trade": trade,
         "records": records,
     }
     data = json.dumps(payload, ensure_ascii=False).replace("</", "<\\/")
