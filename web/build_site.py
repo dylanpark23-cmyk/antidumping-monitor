@@ -150,17 +150,18 @@ const usd=v=>v>=1e9?'$'+(v/1e9).toFixed(2)+'B':v>=1e6?'$'+(v/1e6).toFixed(1)+'M'
 
 /* 메뉴 정의 — 이름·설명·데이터 출처를 여기서 바꾸면 됩니다 */
 const SECTIONS=[
- {id:'cn-file',name:'중국제소',full:'중국 제소',desc:'중국 상무부(MOFCOM)가 조사하는 무역구제 사건',test:r=>r.auth==='CN',krDefault:true,live:true,
-  plan:['중국 상무부 공고(立案·初裁·终裁·复审)를 매일 수집','제목에 韩国가 있으면 한국 관련으로 표시']},
- {id:'cn-resp',name:'중국피제소',full:'중국 피제소',desc:'세계 각국이 중국산 제품을 조사하는 사건',test:r=>r.tg.includes('CN'),krDefault:false,live:true,
-  plan:['미국·EU·인도·한국(무역위원회)의 중국산 조사를 자동 분류']},
- {id:'us-file',name:'미국제소',full:'미국 제소',desc:'미국 상무부(ITA)·국제무역위원회(ITC)가 조사하는 사건',test:r=>r.auth==='US',krDefault:true,live:true,plan:[]},
- {id:'us-resp',name:'미국피제소',full:'미국 피제소',desc:'세계 각국이 미국산 제품을 조사하는 사건',test:r=>r.tg.includes('US'),krDefault:false,live:true,
-  plan:['중국·EU·인도·한국(무역위원회)의 미국산 조사를 자동 분류']},
- {id:'third-file',name:'제3국제소',full:'제3국 제소',desc:'미국·중국 외 국가(EU, 인도)가 조사하는 사건',test:r=>!['US','CN','KR'].includes(r.auth),krDefault:true,live:true,
-  plan:['EU 집행위원회 공고(TRON)','인도 DGTR 사건 타임라인']},
- {id:'third-resp',name:'제3국피제소',full:'제3국 피제소',desc:'미국·중국·한국 외 국가 제품이 조사받는 사건',test:r=>r.tg.includes('OT'),krDefault:false,live:true,
-  plan:['미국·중국·EU·인도·한국(무역위원회)의 제3국산 조사를 자동 분류']},
+ {id:'cn-file',name:'중국제소',full:'중국 제소',desc:'한국(무역위원회)이 중국산 제품을 조사하는 사건',test:r=>r.auth==='KR'&&r.tg.includes('CN'),krDefault:false,live:true,
+  plan:['한국 무역위원회 조사 진행·종결 목록']},
+ {id:'cn-resp',name:'중국피제소',full:'중국 피제소',desc:'중국 정부(상무부)가 한국 제품을 조사하는 사건',test:r=>r.auth==='CN',krDefault:true,live:true,
+  plan:['중국 상무부 공고(立案·初裁·终裁·复审)','"한국 관련만"을 끄면 중국의 전체 무역구제 공고를 볼 수 있어요']},
+ {id:'us-file',name:'미국제소',full:'미국 제소',desc:'한국(무역위원회)이 미국산 제품을 조사하는 사건',test:r=>r.auth==='KR'&&r.tg.includes('US'),krDefault:false,live:true,
+  plan:['한국 무역위원회 조사 진행·종결 목록']},
+ {id:'us-resp',name:'미국피제소',full:'미국 피제소',desc:'미국 정부(상무부·ITC)가 한국 제품을 조사하는 사건',test:r=>r.auth==='US',krDefault:true,live:true,
+  plan:['Federal Register 상무부·ITC 공고 (게재예정 포함)','"한국 관련만"을 끄면 미국의 전체 무역구제 공고를 볼 수 있어요']},
+ {id:'third-file',name:'제3국제소',full:'제3국 제소',desc:'한국(무역위원회)이 미국·중국 외 국가 제품을 조사하는 사건',test:r=>r.auth==='KR'&&r.tg.includes('OT'),krDefault:false,live:true,
+  plan:['한국 무역위원회 조사 진행·종결 목록']},
+ {id:'third-resp',name:'제3국피제소',full:'제3국 피제소',desc:'EU·인도 등 제3국 정부가 한국 제품을 조사하는 사건',test:r=>!['US','CN','KR'].includes(r.auth),krDefault:true,live:true,
+  plan:['EU 집행위원회 공고(TRON) · 인도 DGTR','"한국 관련만"을 끄면 해당 국가의 전체 공고를 볼 수 있어요']},
 ];
 const GROUPS=[['all','전체'],['new','신규 조사'],['det','예비·최종판정'],['rev','재심'],['etc','기타']];
 const grp=r=>r.priority===1?'new':(/판정|명령/.test(r.stage)?'det':(/재심/.test(r.stage)?'rev':'etc'));
@@ -179,17 +180,17 @@ function card(r){
   ${r.abstract?`<details><summary>요약(원문)</summary><p>${esc(r.abstract)}</p></details>`:''}
   <div class="links">${r.html_url?`<a href="${esc(r.html_url)}">원문</a>`:''}${r.pdf_url?`<a href="${esc(r.pdf_url)}">PDF</a>`:''}</div></article>`;
 }
-function controls(krOn){
+function controls(krOn,showKr=true){
   return `<div class="ctrl"><input type="search" id="q" value="${esc(st.q)}" placeholder="품목·국가·사건번호 검색 (예: nails, A-580)" aria-label="검색">
   <select id="period" aria-label="기간">${[[14,'최근 2주'],[60,'최근 60일'],[365,'최근 1년'],[99999,'전체']].map(([v,l])=>`<option value="${v}"${st.period==v?' selected':''}>${l}</option>`).join('')}</select>
-  <label class="tg"><input type="checkbox" id="kr"${krOn?' checked':''}> 한국 관련만</label></div><p class="cline" id="cline" aria-live="polite"></p><div class="list" id="list"></div>`;
+  ${showKr?`<label class="tg"><input type="checkbox" id="kr"${krOn?' checked':''}> 한국 관련만</label>`:''}</div><p class="cline" id="cline" aria-live="polite"></p><div class="list" id="list"></div>`;
 }
 let shown=50,rowsNow=[];
 function fill(base,krOn){
   const q=st.q.trim().toLowerCase();
   rowsNow=base.filter(r=>days(r.publication_date)<=st.period&&(!krOn||isW(r))&&(!q||[r.title,r.product,r.agency,(r.countries||[]).join(' '),(r.case_numbers||[]).join(' '),r.abstract,(r.snippets||[]).join(' ')].join(' ').toLowerCase().includes(q)));
   const pl={14:'최근 2주',60:'최근 60일',365:'최근 1년',99999:'전체 기간'}[st.period]||'';
-  const c=$('cline');if(c)c.innerHTML=`${esc(pl)} · ${krOn?'한국 관련':'모든 국가'}${q?` · "${esc(st.q)}"`:''} <b>${rowsNow.length}건</b>`;
+  const c=$('cline');if(c)c.innerHTML=`${esc(pl)}${$('kr')?' · '+(krOn?'한국 관련':'모든 국가'):''}${q?` · "${esc(st.q)}"`:''} <b>${rowsNow.length}건</b>`;
   const L=$('list');if(L){L.style.opacity=.35;setTimeout(()=>L.style.opacity=1,120)}
   shown=50;paint();
 }
@@ -200,31 +201,31 @@ function paint(){
   const m=$('more');if(m)m.addEventListener('click',()=>{shown+=50;paint()});
 }
 function wire(base,krDefault){
-  let kr=st.kr??krDefault;
+  let kr=$('kr')?(st.kr??krDefault):false;
   const go=()=>fill(base,kr);
   $('q').addEventListener('input',e=>{st.q=e.target.value;go()});
   $('period').addEventListener('change',e=>{st.period=+e.target.value;go()});
-  $('kr').addEventListener('change',e=>{kr=e.target.checked;st.kr=kr;go()});
+  if($('kr'))$('kr').addEventListener('change',e=>{kr=e.target.checked;st.kr=kr;go()});
   go();
 }
 const recent=(base,n)=>base.filter(r=>days(r.publication_date)<=n);
 
 function home(){
-  const w14=recent(R.filter(isW),14), n1=w14.filter(r=>r.priority===1).length, pi=R.filter(r=>r.status==='게재예정').length;
-  const notice=R.filter(isW).slice(0,6);
+  const resp=r=>r.auth!=='KR'&&isW(r);const w14=recent(R.filter(resp),14), n1=w14.filter(r=>r.priority===1).length, ktcOpen=R.filter(r=>r.auth==='KR'&&r.status==='진행').length;
+  const notice=R.filter(resp).slice(0,6);
   $('app').innerHTML=`<div class="wrap">
   <section class="hero"><div class="hp"><p class="eyebrow">글로벌 무역구제 모니터</p>
-   <h1>${n1?`최근 2주, 한국 관련 신규 조사 ${n1}건`:`최근 2주 한국 관련 공고 ${w14.length}건`}</h1>
-   <p class="s">미국·중국·EU·인도·한국 조사당국 공고 · 흰 바늘이 한국 관련, 점은 신규 조사 개시 · 최근 60일</p>
+   <h1>${n1?`최근 2주, 한국 피제소 신규 조사 ${n1}건`:`최근 2주 한국 피제소 공고 ${w14.length}건`}</h1>
+   <p class="s">미국·중국·EU·인도 조사당국 공고 · 흰 바늘이 한국 피제소, 점은 신규 조사 개시 · 최근 60일</p>
    <div class="fig"><svg id="scale" role="img" aria-label="최근 60일 공고 눈금자"></svg></div></div>
    <aside class="notice"><div class="nt"><b>NOTICE</b><a href="#us-file">더보기 +</a></div>
    ${notice.length?`<ul>${notice.map(r=>`<li><a href="${esc(r.html_url)}" title="${esc(r.title)}">${esc(r.product||r.title)} · ${esc(r.stage)}</a><time>${esc(r.publication_date)}</time></li>`).join('')}</ul>`:'<p class="em">아직 한국 관련 공고가 없어요.</p>'}
    </aside></section>
-  <div class="tiles">${SECTIONS.map(s=>{const n=recent(R.filter(s.test),60).length;return `<a class="tile" href="#${s.id}"><h3>${esc(s.name.replace(/(제소|피제소)$/,''))}<span>${esc(s.name.match(/(피제소|제소)$/)[0])}</span><em class="st ${s.live?'live':'soon'}">${s.live?'연결됨':'준비 중'}</em></h3>
-    <div class="n">${s.live?n:'–'}<small>${s.live?'최근 60일':''}</small></div><p>${esc(s.desc)}</p></a>`}).join('')}</div></div>
-  <section class="kband"><div class="wrap">${[['최근 2주 한국 관련',w14.length],['그중 신규 조사',n1],['게재예정',pi],['누적 수집',R.length]].map(([l,v])=>`<div class="k"><b>${v}</b><span>${l}</span></div>`).join('')}</div></section>
-  <div class="wrap"><h2 class="sec">최근 공고</h2>${controls(st.kr??true)}</div>`;
-  wire(R,true);
+  <div class="tiles">${SECTIONS.map(s=>{const n=recent(R.filter(r=>s.test(r)&&(!s.krDefault||isW(r))),60).length;return `<a class="tile" href="#${s.id}"><h3>${esc(s.name.replace(/(제소|피제소)$/,''))}<span>${esc(s.name.match(/(피제소|제소)$/)[0])}</span><em class="st ${s.live?'live':'soon'}">${s.live?'연결됨':'준비 중'}</em></h3>
+    <div class="n">${s.live?n:'–'}<small>${s.live?(s.krDefault?'최근 60일 · 한국 관련':'최근 60일'):''}</small></div><p>${esc(s.desc)}</p></a>`}).join('')}</div></div>
+  <section class="kband"><div class="wrap">${[['최근 2주 한국 피제소',w14.length],['그중 신규 조사',n1],['국내제소 진행 중',ktcOpen],['누적 수집',R.length]].map(([l,v])=>`<div class="k"><b>${v}</b><span>${l}</span></div>`).join('')}</div></section>
+  <div class="wrap"><h2 class="sec">최근 한국 피제소 공고</h2>${controls(st.kr??true)}</div>`;
+  wire(R.filter(r=>r.auth!=='KR'),true);
   const s=$('scale');
   const draw=()=>{
     const W=s.clientWidth,H=s.clientHeight,pad=6,span=60,base=H-30,x=d=>pad+(W-2*pad)*(1-d/span);
@@ -232,7 +233,7 @@ function home(){
     for(let d=0;d<=span;d++){const big=d%7===0;g+=`<line x1="${x(d)}" y1="${base}" x2="${x(d)}" y2="${base+(big?9:4)}" stroke="#fff" stroke-opacity="${big?.9:.45}"/>`;
       if(big&&(W>520||d%14===0)){const t=new Date(TODAY-d*864e5);g+=`<text x="${x(d)}" y="${base+24}" font-size="12" text-anchor="${d===0?'end':'middle'}" fill="#fff" fill-opacity=".85">${d===0?'오늘':(t.getUTCMonth()+1)+'/'+t.getUTCDate()}</text>`}}
     const stack={};
-    R.filter(r=>days(r.publication_date)<=span).forEach(r=>{const d=Math.max(0,days(r.publication_date));stack[d]=(stack[d]||0)+1;const h=Math.min(base-8,(w0=>w0?46:26)(isW(r))+stack[d]*12),w=isW(r);
+    R.filter(r=>days(r.publication_date)<=span).forEach(r=>{const d=Math.max(0,days(r.publication_date));stack[d]=(stack[d]||0)+1;const w=isW(r)&&r.auth!=='KR',h=Math.min(base-8,(w?46:26)+stack[d]*12);
       g+=`<line x1="${x(d)}" y1="${base}" x2="${x(d)}" y2="${base-h}" stroke="#fff" stroke-opacity="${w?1:.35}" stroke-width="${w?2.5:1.5}"/>`;
       if(w&&r.priority===1)g+=`<circle cx="${x(d)}" cy="${base-h}" r="4.5" fill="#fff"/>`});
     s.innerHTML=g;
@@ -249,10 +250,10 @@ function section(sec,g){
   const all=R.filter(sec.test), gn=GROUPS.find(x=>x[0]===g)||GROUPS[0];
   const items=GROUPS.map(([k,l])=>`<li><a href="#${sec.id}${k==='all'?'':'-'+k}" class="${k===gn[0]?'on':''}">${l}<span class="cnt">${all.filter(r=>k==='all'||grp(r)===k).length}</span></a></li>`).join('');
   const base=all.filter(r=>gn[0]==='all'||grp(r)===gn[0]);
-  const body=sec.live||all.length?`<p class="lead">${esc(sec.desc)}</p><p>${sec.plan.length?esc(sec.plan.join(' · ')):'상무부·ITC 공고를 하루 2회 자동 수집합니다.'}</p>${controls(st.kr??sec.krDefault)}`:
+  const body=sec.live||all.length?`<p class="lead">${esc(sec.desc)}</p><p>${sec.plan.length?esc(sec.plan.join(' · ')):'상무부·ITC 공고를 하루 2회 자동 수집합니다.'}</p>${controls(sec.krDefault?(st.kr??true):false,sec.krDefault)}`:
    `<p class="lead">${esc(sec.desc)}</p><div class="empty"><h3>데이터 연결 준비 중</h3><p>다음 단계에서 아래 출처를 연결할 예정이에요.</p><ul>${sec.plan.map(p=>`<li>${esc(p)}</li>`).join('')}</ul></div>`;
   $('app').innerHTML=shell(sec.full,sec.name,items,[sec.name,gn[1]],body);
-  if($('list'))wire(base,sec.krDefault);
+  if($('list'))wire(base,sec.krDefault?(st.kr??true):false);
 }
 function data(sub){
   const T=D.trade||{items:[]};
