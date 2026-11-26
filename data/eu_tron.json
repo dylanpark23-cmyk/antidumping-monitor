@@ -28,6 +28,34 @@
   "first_seen": "2026-11-26T09:07Z"
  },
  {
+  "id": "EU-7907",
+  "source": "EU-TRON",
+  "authority": "EU",
+  "status": "게재",
+  "agency": "EU 집행위",
+  "title": "Executive Summary",
+  "product": "Automotive Glass",
+  "countries": [
+   "People's Republic of China"
+  ],
+  "targets": [
+   "CN"
+  ],
+  "stage": "기타",
+  "priority": 3,
+  "remedy": "AD",
+  "case_numbers": [
+   "AD766"
+  ],
+  "watch": [],
+  "snippets": [],
+  "abstract": "구분: Information about Complaint/Request",
+  "publication_date": "2026-11-26",
+  "html_url": "https://tron.trade.ec.europa.eu/investigations/case-view?caseId=2922",
+  "pdf_url": "N/A",
+  "first_seen": "2026-11-26T13:58Z"
+ },
+ {
   "id": "EU-7901",
   "source": "EU-TRON",
   "authority": "EU",
