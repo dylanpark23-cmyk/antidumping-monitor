@@ -1,5 +1,117 @@
 [
  {
+  "id": "EU-7920",
+  "source": "EU-TRON",
+  "authority": "EU",
+  "status": "게재",
+  "agency": "EU 집행위",
+  "title": "Notice of initiation of an anti-dumping proceeding concerning imports of automotive glass, originating in the People’s Republic of China (C/2026/6159)",
+  "product": "Automotive Glass",
+  "countries": [
+   "People's Republic of China"
+  ],
+  "targets": [
+   "CN"
+  ],
+  "stage": "신규 조사 개시(EU)",
+  "priority": 1,
+  "remedy": "AD",
+  "case_numbers": [
+   "AD766"
+  ],
+  "watch": [],
+  "snippets": [],
+  "abstract": "구분: Initiation",
+  "publication_date": "2026-11-26",
+  "html_url": "https://tron.trade.ec.europa.eu/investigations/case-view?caseId=2922",
+  "pdf_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:C_202606159",
+  "first_seen": "2026-11-26T09:07Z"
+ },
+ {
+  "id": "EU-7901",
+  "source": "EU-TRON",
+  "authority": "EU",
+  "status": "게재",
+  "agency": "EU 집행위",
+  "title": "Case ID",
+  "product": "Automotive Glass",
+  "countries": [
+   "People's Republic of China"
+  ],
+  "targets": [
+   "CN"
+  ],
+  "stage": "기타",
+  "priority": 3,
+  "remedy": "AD",
+  "case_numbers": [
+   "AD766"
+  ],
+  "watch": [],
+  "snippets": [],
+  "abstract": "구분: Guidance document",
+  "publication_date": "2026-11-26",
+  "html_url": "https://tron.trade.ec.europa.eu/investigations/case-view?caseId=2922",
+  "pdf_url": "N/A",
+  "first_seen": "2026-11-26T09:07Z"
+ },
+ {
+  "id": "EU-7899",
+  "source": "EU-TRON",
+  "authority": "EU",
+  "status": "게재",
+  "agency": "EU 집행위",
+  "title": "PCN and Exchange Rates",
+  "product": "Automotive Glass",
+  "countries": [
+   "People's Republic of China"
+  ],
+  "targets": [
+   "CN"
+  ],
+  "stage": "기타",
+  "priority": 3,
+  "remedy": "AD",
+  "case_numbers": [
+   "AD766"
+  ],
+  "watch": [],
+  "snippets": [],
+  "abstract": "구분: Guidance document",
+  "publication_date": "2026-11-26",
+  "html_url": "https://tron.trade.ec.europa.eu/investigations/case-view?caseId=2922",
+  "pdf_url": "N/A",
+  "first_seen": "2026-11-26T09:07Z"
+ },
+ {
+  "id": "EU-7895",
+  "source": "EU-TRON",
+  "authority": "EU",
+  "status": "게재",
+  "agency": "EU 집행위",
+  "title": "Information on inputs for exporting producers",
+  "product": "Automotive Glass",
+  "countries": [
+   "People's Republic of China"
+  ],
+  "targets": [
+   "CN"
+  ],
+  "stage": "기타",
+  "priority": 3,
+  "remedy": "AD",
+  "case_numbers": [
+   "AD766"
+  ],
+  "watch": [],
+  "snippets": [],
+  "abstract": "구분: Information on inputs for exporting producers",
+  "publication_date": "2026-11-26",
+  "html_url": "https://tron.trade.ec.europa.eu/investigations/case-view?caseId=2922",
+  "pdf_url": "N/A",
+  "first_seen": "2026-11-26T09:07Z"
+ },
+ {
   "id": "EU-7867",
   "source": "EU-TRON",
   "authority": "EU",

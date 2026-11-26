@@ -13903,14 +13903,23 @@
    "Korea",
    "사건번호 580"
   ],
-  "snippets": [],
+  "snippets": [
+   "[A-580-897]",
+   "Large Diameter Welded Pipe From the Republic of Korea: Preliminary Results and Rescission, in Part, of Antidumping Duty Administrative Review; 2024-2025",
+   "(welded pipe) from the Republic of Korea (Korea).\\1\\ On August 27, 2025, Commerce selected Hyundai Steel Pipe Co., Ltd. (HSP) and SeAH Steel Corporation (SeAH) as the mandatory respondents in this",
+   "Diameter Welded Pipe from the Republic of Korea: Amended Final Affirmative Antidumping Determination and Antidumping Duty Order, 84 FR 18767 (May 2, 2019) (Order).",
+   "Welded Pipe from the Republic of Korea; 2024-2025,'' dated concurrently with, and hereby adopted by, this notice (Preliminary Decision Memorandum).",
+   "The merchandise subject to the Order is welded pipe from Korea. For a complete description of the scope of the Order, see the Preliminary Decision Memorandum.",
+   "\\11\\ See Large Diameter Welded Pipe from the Republic of Korea: Final Results of Antidumping Duty Administrative Review; 2023-2024, 91 FR 23400 (May 1, 2026).",
+   "3. EEW Korea Co., Ltd. 4. Histeel Co., Ltd. 5. Hyundai RB Co., Ltd."
+  ],
   "abstract": "The U.S. Department of Commerce (Commerce) preliminarily determines that the individually-examined producers/exporters subject to this review did not make sales of subject merchandise at less than normal value (NV) during the period of review (POR), May 1, 2024, through April 30, 2025. In addition, we are rescinding the review with respect to 15 companies. Interested parties are invited to comment on these preliminary results of review.",
   "publication_date": "2026-07-30",
   "html_url": "https://www.federalregister.gov/documents/2026/07/30/2026-15399/large-diameter-welded-pipe-from-the-republic-of-korea-preliminary-results-and-rescission-in-part-of",
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15399.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/07/30/2026-15399.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-15398",
@@ -13936,7 +13945,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15398.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/07/30/2026-15398.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-15397",
@@ -13962,7 +13971,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15397.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/07/30/2026-15397.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-15396",
@@ -13988,7 +13997,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-30/pdf/2026-15396.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/07/30/2026-15396.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-15240",
@@ -14017,7 +14026,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-29/pdf/2026-15240.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/07/29/2026-15240.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-15235",
@@ -14044,7 +14053,7 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-29/pdf/2026-15235.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/07/29/2026-15235.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  },
  {
   "id": "2026-15232",
@@ -14070,6 +14079,6 @@
   "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-07-29/pdf/2026-15232.pdf",
   "raw_text_url": "https://www.federalregister.gov/documents/full_text/text/2026/07/29/2026-15232.txt",
   "first_seen": "2026-11-26T02:07Z",
-  "fulltext_checked": false
+  "fulltext_checked": true
  }
 ]
