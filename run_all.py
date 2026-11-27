@@ -3,17 +3,13 @@
 import os
 import traceback
 
-from collectors import cn_mofcom, eu_tron, in_dgtr, kita_import_reg, kr_ktc, trade_data, us_federal_register
+from collectors import kita_import_reg, kr_ktc, trade_data
 from collectors.common import load_config
 from notify.email_new import send
 from web.build_site import build
 
 SOURCES = [
-    ("미국 Federal Register", us_federal_register.run),
     ("한국 무역위원회", kr_ktc.run),
-    ("중국 상무부", cn_mofcom.run),
-    ("EU", eu_tron.run),
-    ("인도 DGTR", in_dgtr.run),
     ("KITA 수입규제DB", kita_import_reg.run),
 ]
 
