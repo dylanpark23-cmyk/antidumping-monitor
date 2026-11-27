@@ -160,8 +160,8 @@ const SECTIONS=[
   plan:['Federal Register 상무부·ITC 공고 (게재예정 포함)','"한국 관련만"을 끄면 미국의 전체 무역구제 공고를 볼 수 있어요']},
  {id:'third-file',name:'제3국제소',full:'제3국 제소',desc:'한국(무역위원회)이 미국·중국 외 국가 제품을 조사하는 사건',test:r=>r.auth==='KR'&&r.tg.includes('OT'),krDefault:false,live:true,
   plan:['한국 무역위원회 조사 진행·종결 목록']},
- {id:'third-resp',name:'제3국피제소',full:'제3국 피제소',desc:'EU·인도 등 제3국 정부가 한국 제품을 조사하는 사건',test:r=>!['US','CN','KR'].includes(r.auth),krDefault:true,live:true,
-  plan:['EU 집행위원회 공고(TRON) · 인도 DGTR','"한국 관련만"을 끄면 해당 국가의 전체 공고를 볼 수 있어요']},
+ {id:'third-resp',name:'제3국피제소',full:'제3국 피제소',desc:'EU·인도·튀르키예·브라질 등 제3국 정부가 한국 제품을 조사하는 사건',test:r=>!['US','CN','KR'].includes(r.auth),krDefault:true,live:true,
+  plan:['KITA 수입규제DB(44개국 대한국 규제) · EU 집행위원회 공고(TRON) · 인도 DGTR','"한국 관련만"을 끄면 EU·인도의 전체 공고도 볼 수 있어요']},
 ];
 const GROUPS=[['all','전체'],['new','신규 조사'],['det','예비·최종판정'],['rev','재심'],['etc','기타']];
 const grp=r=>r.priority===1?'new':(/판정|명령/.test(r.stage)?'det':(/재심/.test(r.stage)?'rev':'etc'));
@@ -178,7 +178,7 @@ function card(r){
   ${r.case_numbers&&r.case_numbers.length?`<p>사건번호 ${esc(r.case_numbers.slice(0,8).join(', '))}${r.case_numbers.length>8?' 외':''}</p>`:''}
   ${r.snippets&&r.snippets.length?`<details><summary>본문 중 한국 관련 언급 ${r.snippets.length}곳</summary><ul>${r.snippets.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></details>`:''}
   ${r.abstract?`<details><summary>요약(원문)</summary><p>${esc(r.abstract)}</p></details>`:''}
-  <div class="links">${r.html_url?`<a href="${esc(r.html_url)}">원문</a>`:''}${r.pdf_url?`<a href="${esc(r.pdf_url)}">PDF</a>`:''}</div></article>`;
+  <div class="links">${r.html_url?`<a href="${esc(r.html_url)}">원문</a>`:''}${r.pdf_url?`<a href="${esc(r.pdf_url)}">${r.source==='KITA 수입규제DB'?'관련 공고':'PDF'}</a>`:''}</div></article>`;
 }
 function controls(krOn,showKr=true){
   return `<div class="ctrl"><input type="search" id="q" value="${esc(st.q)}" placeholder="품목·국가·사건번호 검색 (예: nails, A-580)" aria-label="검색">
@@ -287,7 +287,7 @@ function data(sub){
 function src(){
   const items=`<li><a class="on" href="#src">데이터 출처</a></li>`;
   const F=D.failed||[],n=a=>R.filter(r=>r.auth===a).length,stt=(nm,k)=>F.includes(nm)?'이번 갱신 실패':(k?k+'건':'연결됨');
-  const rows=[['미국 상무부·ITC','Federal Register API',stt('미국 Federal Register',n('US'))],['한국 무역위원회','ktc.go.kr 조사 진행·종결 목록',stt('한국 무역위원회',n('KR'))],['중국 상무부','mofcom.gov.cn 공고',stt('중국 상무부',n('CN'))],['EU 집행위원회','TRON 공고 API',stt('EU',n('EU'))],['인도 DGTR','dgtr.gov.in 사건 타임라인',stt('인도 DGTR',n('IN'))],['한국 수출입 통계','관세청 API (KITA 동일 원자료)',(D.trade&&D.trade.customs_enabled)?'연결됨':'키 등록 필요'],['세계 교역 통계','UN Comtrade 공개 API','연결됨']];
+  const rows=[['미국 상무부·ITC','Federal Register API',stt('미국 Federal Register',n('US'))],['한국 무역위원회','ktc.go.kr 조사 진행·종결 목록',stt('한국 무역위원회',n('KR'))],['중국 상무부','mofcom.gov.cn 공고',stt('중국 상무부',n('CN'))],['EU 집행위원회','TRON 공고 API',stt('EU',n('EU'))],['인도 DGTR','dgtr.gov.in 사건 타임라인',stt('인도 DGTR',n('IN'))],['전 세계 대한국 수입규제','KITA 수입규제DB (44개국)',stt('KITA 수입규제DB',R.filter(r=>r.source==='KITA 수입규제DB').length)],['한국 수출입 통계','관세청 API (KITA 동일 원자료)',(D.trade&&D.trade.customs_enabled)?'연결됨':'키 등록 필요'],['세계 교역 통계','UN Comtrade 공개 API','연결됨']];
   $('app').innerHTML=shell('데이터 출처','안내',items,['안내','데이터 출처'],`<div class="scroll"><table style="width:100%;border-collapse:collapse;margin-top:20px;font-size:15px"><thead><tr>${['구분','출처','상태'].map(h=>`<th style="text-align:left;border-bottom:2px solid var(--ink);padding:8px">${h}</th>`).join('')}</tr></thead><tbody>${rows.map(r=>`<tr>${r.map(c=>`<td style="border-bottom:1px solid var(--line);padding:10px 8px;white-space:nowrap">${esc(c)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`);
 }
 
@@ -327,7 +327,7 @@ def tag_watch_products(records: list) -> None:
                 r["watch"] = list(r.get("watch") or []) + [tag]
 
 
-STORES = ["us_fr.json", "kr_ktc.json", "cn_mofcom.json", "eu_tron.json", "in_dgtr.json"]
+STORES = ["us_fr.json", "kr_ktc.json", "cn_mofcom.json", "eu_tron.json", "in_dgtr.json", "kita_import_reg.json"]
 
 
 def build(failed_sources: list = None) -> None:
