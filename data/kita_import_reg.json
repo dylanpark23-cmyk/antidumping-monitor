@@ -1,5 +1,37 @@
 [
  {
+  "id": "KITA-ROIL2025010003",
+  "source": "KITA 수입규제DB",
+  "authority": "EU",
+  "agency": "EU 조사당국",
+  "status": "규제중",
+  "title": "[EU] 망간 및 실리콘 합금 원소(Manganese and Silicon-based Alloying Elements)",
+  "product": "망간 및 실리콘 합금 원소(Manganese and Silicon-based Alloying Elements)",
+  "countries": [
+   "한국",
+   "전 세계"
+  ],
+  "targets": [
+   "KR",
+   "OT"
+  ],
+  "stage": "재심 · 개시(2026-11-13)",
+  "priority": 2,
+  "remedy": "SG",
+  "case_numbers": [],
+  "watch": [
+   "Korea"
+  ],
+  "snippets": [],
+  "abstract": "진행: 조사개시(2024-12-19) → 원심 · 최종판정(2025-11-18) → 재심 · 개시(2026-11-13) · 조사개시일 2024-12-19 · 피제소국: 한국, 전 세계 · HS 280469, 720211, 720219, 720221, 720229, 720230, 72029930, 72029980, 28500060",
+  "publication_date": "2026-11-27",
+  "init_date": "2024-12-19",
+  "html_url": "https://www.kita.net/importRegulation/importRegulation/importRegulationCardDetail.do?tirId=ROIL2025010003",
+  "pdf_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:C_202605959",
+  "detail_ok": true,
+  "first_seen": "2026-11-27T00:29Z"
+ },
+ {
   "id": "KITA-ROIL2026110003",
   "source": "KITA 수입규제DB",
   "authority": "EU",
@@ -5068,38 +5100,6 @@
   "init_date": "2014-10-17",
   "html_url": "https://www.kita.net/importRegulation/importRegulation/importRegulationCardDetail.do?tirId=ROIL2014110366",
   "pdf_url": "https://www.industry.gov.au/sites/default/files/adc/public-record/2025-11/660_-_26_-_notice_adn_-_adc_-_anti-dumping_commission_-_adn_2025-_102-_findings_in_relation_to_continuation_inquiry.pdf",
-  "detail_ok": true,
-  "first_seen": "2026-11-27T00:29Z"
- },
- {
-  "id": "KITA-ROIL2025010003",
-  "source": "KITA 수입규제DB",
-  "authority": "EU",
-  "agency": "EU 조사당국",
-  "status": "규제중",
-  "title": "[EU] 망간 및 실리콘 합금 원소(Manganese and Silicon-based Alloying Elements)",
-  "product": "망간 및 실리콘 합금 원소(Manganese and Silicon-based Alloying Elements)",
-  "countries": [
-   "한국",
-   "전 세계"
-  ],
-  "targets": [
-   "KR",
-   "OT"
-  ],
-  "stage": "원심 · 최종판정(2025-11-18)",
-  "priority": 3,
-  "remedy": "SG",
-  "case_numbers": [],
-  "watch": [
-   "Korea"
-  ],
-  "snippets": [],
-  "abstract": "진행: 조사개시(2024-12-19) → 원심 · 최종판정(2025-11-18) · 조사개시일 2024-12-19 · 피제소국: 한국, 전 세계 · HS 280469, 720211, 720219, 720221, 720229, 720230, 72029930, 72029980, 28500060",
-  "publication_date": "2025-11-28",
-  "init_date": "2024-12-19",
-  "html_url": "https://www.kita.net/importRegulation/importRegulation/importRegulationCardDetail.do?tirId=ROIL2025010003",
-  "pdf_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202502351",
   "detail_ok": true,
   "first_seen": "2026-11-27T00:29Z"
  },
