@@ -3,7 +3,7 @@
 import os
 import traceback
 
-from collectors import cn_mofcom, eu_tron, in_dgtr, kr_ktc, trade_data, us_federal_register
+from collectors import cn_mofcom, eu_tron, in_dgtr, kita_import_reg, kr_ktc, trade_data, us_federal_register
 from collectors.common import load_config
 from notify.email_new import send
 from web.build_site import build
@@ -14,6 +14,7 @@ SOURCES = [
     ("중국 상무부", cn_mofcom.run),
     ("EU", eu_tron.run),
     ("인도 DGTR", in_dgtr.run),
+    ("KITA 수입규제DB", kita_import_reg.run),
 ]
 
 
@@ -31,7 +32,8 @@ def main() -> None:
         except Exception as e:
             from collectors.common import load_store
             # 무역위원회는 해외 서버 접속이 막혀 있어 기존(브라우저로 받아둔) 데이터를 유지
-            if not (name == "한국 무역위원회" and load_store("kr_ktc.json")):
+            if not ((name == "한국 무역위원회" and load_store("kr_ktc.json"))
+                    or (name == "KITA 수입규제DB" and load_store("kita_import_reg.json"))):
                 failed.append(name)
             print(f"[오류] {name} 수집 실패: {e}")
             traceback.print_exc()
