@@ -152,16 +152,16 @@ const usd=v=>v>=1e9?'$'+(v/1e9).toFixed(2)+'B':v>=1e6?'$'+(v/1e6).toFixed(1)+'M'
 const SECTIONS=[
  {id:'cn-file',name:'중국제소',full:'중국 제소',desc:'한국(무역위원회)이 중국산 제품을 조사하는 사건',test:r=>r.auth==='KR'&&r.tg.includes('CN'),krDefault:false,live:true,
   plan:['한국 무역위원회 조사 진행·종결 목록']},
- {id:'cn-resp',name:'중국피제소',full:'중국 피제소',desc:'중국 정부(상무부)가 한국 제품을 조사하는 사건',test:r=>r.auth==='CN',krDefault:true,live:true,
-  plan:['중국 상무부 공고(立案·初裁·终裁·复审)','"한국 관련만"을 끄면 중국의 전체 무역구제 공고를 볼 수 있어요']},
+ {id:'cn-resp',name:'중국피제소',full:'중국 피제소',desc:'중국 정부가 한국 제품을 조사하는 사건',test:r=>r.source==='KITA 수입규제DB'&&r.auth==='CN',krDefault:false,live:true,
+  plan:['KITA 수입규제DB (한국무역협회)']},
  {id:'us-file',name:'미국제소',full:'미국 제소',desc:'한국(무역위원회)이 미국산 제품을 조사하는 사건',test:r=>r.auth==='KR'&&r.tg.includes('US'),krDefault:false,live:true,
   plan:['한국 무역위원회 조사 진행·종결 목록']},
- {id:'us-resp',name:'미국피제소',full:'미국 피제소',desc:'미국 정부(상무부·ITC)가 한국 제품을 조사하는 사건',test:r=>r.auth==='US',krDefault:true,live:true,
-  plan:['Federal Register 상무부·ITC 공고 (게재예정 포함)','"한국 관련만"을 끄면 미국의 전체 무역구제 공고를 볼 수 있어요']},
+ {id:'us-resp',name:'미국피제소',full:'미국 피제소',desc:'미국 정부가 한국 제품을 조사하는 사건',test:r=>r.source==='KITA 수입규제DB'&&r.auth==='US',krDefault:false,live:true,
+  plan:['KITA 수입규제DB (한국무역협회)']},
  {id:'third-file',name:'제3국제소',full:'제3국 제소',desc:'한국(무역위원회)이 미국·중국 외 국가 제품을 조사하는 사건',test:r=>r.auth==='KR'&&r.tg.includes('OT'),krDefault:false,live:true,
   plan:['한국 무역위원회 조사 진행·종결 목록']},
- {id:'third-resp',name:'제3국피제소',full:'제3국 피제소',desc:'EU·인도·튀르키예·브라질 등 제3국 정부가 한국 제품을 조사하는 사건',test:r=>!['US','CN','KR'].includes(r.auth),krDefault:true,live:true,
-  plan:['KITA 수입규제DB(44개국 대한국 규제) · EU 집행위원회 공고(TRON) · 인도 DGTR','"한국 관련만"을 끄면 EU·인도의 전체 공고도 볼 수 있어요']},
+ {id:'third-resp',name:'제3국피제소',full:'제3국 피제소',desc:'EU·인도·튀르키예·브라질 등 제3국 정부가 한국 제품을 조사하는 사건',test:r=>r.source==='KITA 수입규제DB'&&!['US','CN','KR'].includes(r.auth),krDefault:false,live:true,
+  plan:['KITA 수입규제DB (한국무역협회)']},
 ];
 const GROUPS=[['all','전체'],['new','신규 조사'],['det','예비·최종판정'],['rev','재심'],['etc','기타']];
 const grp=r=>r.priority===1?'new':(/판정|명령/.test(r.stage)?'det':(/재심/.test(r.stage)?'rev':'etc'));
@@ -214,7 +214,7 @@ function home(){
   $('app').innerHTML=`<div class="wrap">
   <section class="hero"><div class="hp"><p class="eyebrow">글로벌 무역구제 모니터</p>
    <h1>${n1?`최근 2주, 한국 피제소 신규 조사 ${n1}건`:`최근 2주 한국 피제소 공고 ${w14.length}건`}</h1>
-   <p class="s">미국·중국·EU·인도 조사당국 공고 · 흰 바늘이 한국 피제소, 점은 신규 조사 개시 · 최근 60일</p>
+   <p class="s">KITA 수입규제DB 기준 · 흰 바늘이 한국 피제소, 점은 신규 조사 개시 · 최근 60일</p>
    <div class="fig"><svg id="scale" role="img" aria-label="최근 60일 공고 눈금자"></svg></div></div>
    <aside class="notice"><div class="nt"><b>NOTICE</b><a href="#us-file">더보기 +</a></div>
    ${notice.length?`<ul>${notice.map(r=>`<li><a href="${esc(r.html_url)}" title="${esc(r.title)}">${esc(r.product||r.title)} · ${esc(r.stage)}</a><time>${esc(r.publication_date)}</time></li>`).join('')}</ul>`:'<p class="em">아직 한국 관련 공고가 없어요.</p>'}
@@ -222,8 +222,8 @@ function home(){
   <div class="tiles">${SECTIONS.map(s=>{const n=R.filter(r=>s.test(r)&&(!s.krDefault||isW(r))).length;return `<a class="tile" href="#${s.id}"><h3>${esc(s.name.replace(/(제소|피제소)$/,''))}<span>${esc(s.name.match(/(피제소|제소)$/)[0])}</span><em class="st ${s.live?'live':'soon'}">${s.live?'연결됨':'준비 중'}</em></h3>
     <div class="n">${s.live?n:'–'}<small>${s.live?(s.krDefault?'전체 · 한국 관련':'전체'):''}</small></div><p>${esc(s.desc)}</p></a>`}).join('')}</div></div>
   <section class="kband"><div class="wrap">${[['최근 2주 한국 피제소',w14.length],['그중 신규 조사',n1],['국내제소 진행 중',ktcOpen],['누적 수집',R.length]].map(([l,v])=>`<div class="k"><b>${v}</b><span>${l}</span></div>`).join('')}</div></section>
-  <div class="wrap"><h2 class="sec">최근 한국 피제소 공고</h2>${controls(st.kr??true)}</div>`;
-  wire(R.filter(r=>r.auth!=='KR'),true);
+  <div class="wrap"><h2 class="sec">최근 한국 피제소 사건</h2>${controls(false,false)}</div>`;
+  wire(R.filter(r=>r.auth!=='KR'),false);
   const s=$('scale');
   const draw=()=>{
     const W=s.clientWidth,H=s.clientHeight,pad=6,span=60,base=H-30,x=d=>pad+(W-2*pad)*(1-d/span);
@@ -287,7 +287,7 @@ function data(sub){
 function src(){
   const items=`<li><a class="on" href="#src">데이터 출처</a></li>`;
   const F=D.failed||[],n=a=>R.filter(r=>r.auth===a).length,stt=(nm,k)=>F.includes(nm)?'이번 갱신 실패':(k?k+'건':'연결됨');
-  const rows=[['미국 상무부·ITC','Federal Register API',stt('미국 Federal Register',n('US'))],['한국 무역위원회','ktc.go.kr 조사 진행·종결 목록',stt('한국 무역위원회',n('KR'))],['중국 상무부','mofcom.gov.cn 공고',stt('중국 상무부',n('CN'))],['EU 집행위원회','TRON 공고 API',stt('EU',n('EU'))],['인도 DGTR','dgtr.gov.in 사건 타임라인',stt('인도 DGTR',n('IN'))],['전 세계 대한국 수입규제','KITA 수입규제DB (44개국)',stt('KITA 수입규제DB',R.filter(r=>r.source==='KITA 수입규제DB').length)],['한국 수출입 통계','관세청 API (KITA 동일 원자료)',(D.trade&&D.trade.customs_enabled)?'연결됨':'키 등록 필요'],['세계 교역 통계','UN Comtrade 공개 API','연결됨']];
+  const rows=[['피제소 (중국·미국·제3국)','KITA 수입규제DB (한국무역협회, 44개국)',stt('KITA 수입규제DB',R.filter(r=>r.source==='KITA 수입규제DB').length)],['제소 (중국·미국·제3국)','한국 무역위원회 조사 진행·종결 목록',stt('한국 무역위원회',n('KR'))],['한국 수출입 통계 (DATA)','관세청 API (KITA 동일 원자료)',(D.trade&&D.trade.customs_enabled)?'연결됨':'키 등록 필요'],['세계 교역 통계 (DATA)','UN Comtrade 공개 API','연결됨']];
   $('app').innerHTML=shell('데이터 출처','안내',items,['안내','데이터 출처'],`<div class="scroll"><table style="width:100%;border-collapse:collapse;margin-top:20px;font-size:15px"><thead><tr>${['구분','출처','상태'].map(h=>`<th style="text-align:left;border-bottom:2px solid var(--ink);padding:8px">${h}</th>`).join('')}</tr></thead><tbody>${rows.map(r=>`<tr>${r.map(c=>`<td style="border-bottom:1px solid var(--line);padding:10px 8px;white-space:nowrap">${esc(c)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`);
 }
 
@@ -327,7 +327,7 @@ def tag_watch_products(records: list) -> None:
                 r["watch"] = list(r.get("watch") or []) + [tag]
 
 
-STORES = ["us_fr.json", "kr_ktc.json", "cn_mofcom.json", "eu_tron.json", "in_dgtr.json", "kita_import_reg.json"]
+STORES = ["kr_ktc.json", "kita_import_reg.json"]   # 제소 = 무역위원회, 피제소 = KITA 수입규제DB
 
 
 def build(failed_sources: list = None) -> None:
